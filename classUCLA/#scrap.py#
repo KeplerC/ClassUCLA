@@ -39,6 +39,7 @@ def get_class_info_detailed(URL):
     soup = get_web_page(URL)
     text = str(soup.find_all('p')) #find all tags
     info = []
+
     
     print text
     
