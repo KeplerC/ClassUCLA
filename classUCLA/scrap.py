@@ -10,13 +10,13 @@ def get_web_page(URL):
     try:
         r = requests.get(URL)
     except:
-        print("check your input")
+        print "failure loading searching page"
         
     try:
         soup = BeautifulSoup(r.text, 'html.parser')
+        return soup
     except:
-        print("parser failed")
-    return soup
+        print "Failure Creating Soup"
 
 # get URL for detailed website
 def get_class_info_basic(index):
@@ -34,69 +34,87 @@ def get_class_info_basic(index):
 '''
 
 #extract features
+from collections import OrderedDict
 def get_class_info_detailed(URL):
     soup = get_web_page(URL)
+    print "success loading URL"
     text = str(soup.find_all('p')) #find all tags
-    info = dict()
+    info = OrderedDict()
     loc1 = 0
     loc2 = 0
 
+    #Search and Store subject name
     loc1 = text.find("    ")+5
     loc2 = text.find(" ", loc1)
     info["subject"] = text[loc1:loc2]
 
+    #Search and Store course catalog number
     loc1 = loc2 + 4
     loc2 = text.find(" ", loc1)
     info["course_number"] = text[loc1:loc2] 
 
+    #Search and Store course title
     loc1 = text.find(" - ", loc2) + 3
     loc2 = text.find("</p>", loc1)
     info["course_title"] = text[loc1: loc2]
 
+    #Search and Store course website
     loc1 = text.find("<a href=", loc2) + 9
     loc2 = text.find(">", loc1)
-    info["courser_website"] = text[loc1: loc2]
+    info["course_website"] = text[loc1: loc2]
 
+    #Instructors
     loc1 = text.find("Instructor(s)", loc2) + 26
     loc2 = text.find("</", loc1)
     info["status"] = text[loc1: loc2]
-    
+
+    #Search and Store WL status
     loc1 = text.find("<p>", loc2) + 3
     loc2 = text.find("</", loc1)
     info["waitlist_status"] = text[loc1: loc2]
 
+    #Search and Store days
     loc1 = text.find("data-content", loc2) + 14
     loc2 = text.find("\" ", loc1)
-    info["days"] = text[loc1: loc2]
+    day = text[loc1: loc2]
+    info["day"] =convert_to_weekday(day)
 
+    #Search and Store time
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
     info["time"] = text[loc1: loc2]
 
+    #Search and Store location
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
     info["location"] = text[loc1: loc2]
 
+    #Search and Store units
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
     info["units"] = text[loc1: loc2]
 
+    #Search and Store instructor
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
     info["Instructor"] = text[loc1: loc2]
 
+    #Search and Store final date 
     loc1 = text.find("(s)</p>, <p>", loc2) + 12
     loc2 = text.find("</p>", loc1)
     info["final_date"] = text[loc1: loc2]
-    
+
+    #Search and Store final week day
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
-    info["final_weekday"] = text[loc1: loc2]
-
+    info["final_weekday"] = convert_to_weekday(text[loc1: loc2])
+    
+    #Search and Store final time 
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
     info["final_time"] = text[loc1: loc2]
-    
+
+    #Search and Store final location
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
     if text[loc1] == "C":
@@ -104,31 +122,38 @@ def get_class_info_detailed(URL):
     else:
         info["final_location"] = text[loc1 : loc2]
 
+    # search and store grade type pnp or letter
     loc1 = text.find("Level</p>, <p>", loc2) + 14
     loc2 = text.find("</p>", loc1)
-    info["grade_type"] = text[loc1: loc2]
+    type = text[loc1: loc2]
+    info["grade_type"] = ""
+    if type.find("Pass") != -1:
+        info["grade_type"] += "PNP "
+    if type.find("Letter") != -1:
+        info["grade_type"] += "Letter"
 
+    # search and store restriction
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
-    info["restriction"] = text[loc1: loc2]
+    info["restriction"] = isNone(text[loc1: loc2])
 
     
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
-    info["impacted"] = text[loc1: loc2]
+    info["impacted"] = isNone(text[loc1: loc2])
 
 
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
-    info["individual_studies"] = text[loc1: loc2]
+    info["individual_studies"] = isNone(text[loc1: loc2])
 
     
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
-    info["level"] = text[loc1: loc2]
+    type = text[loc1: loc2]
+    info["level"] = get_class_level(type)
 
     #TODO: Prerequisites
-
     
     loc1 = text.find("breakLongText\">", loc2) + 15
     loc2 = text.find("</p>", loc1)
@@ -141,16 +166,16 @@ def get_class_info_detailed(URL):
     
     loc1 = text.find("breakLongText\">", loc2) + 15
     loc2 = text.find("</p>", loc1)
-    info["GE"] = text[loc1: loc2]
+    info["GE"] = isNone(text[loc1: loc2])
 
     
     loc1 = text.find("breakLongText\">", loc2) + 15
     loc2 = text.find("</p>", loc1)
-    info["writing_II"] = text[loc1: loc2]
+    info["writing_II"] = isNone(text[loc1: loc2])
 
     loc1 = text.find("breakLongText\">", loc2) + 15
     loc2 = text.find("</p>", loc1)
-    info["diveristy"] = text[loc1: loc2]
+    info["diveristy"] = isNone(text[loc1: loc2])
 
     #TODO? class notes
     return info
@@ -164,16 +189,75 @@ def write_to_excel(df):
     writer = pd.ExcelWriter('example.xlsx', engine='xlsxwriter')
     df.to_excel('test.xlsx', 'Sheet1')
     writer.save()
-    
+
+def convert_to_weekday(string):
+    loc = 0
+    day = ""
+    if string.find("M") != -1:
+        day += "M "
+    if string.find("Tu") != -1:
+        day += "Tu "
+    if string.find("W") != -1:
+        day += "W "
+    if string.find("Th") != -1:
+        day += "Th "
+    if string.find("F") != -1:
+        day += "F "
+    if string.find("Sat") != -1:
+        day += "Sat "
+    if string.find("Sun") != -1:
+        day += "Sun "
+    return day
+
+def get_class_level(string):
+    if string[0] == "U":
+        return "Upper"
+    elif string[0] == "L":
+        return "Lower"
+    elif string[0] == "G":
+        return "Graduate"
+    else:
+        return string
+
+def isNone(string):
+    if string == "N/A":
+        return None
+    elif string == "No":
+        return None
+    elif string.find("None"):
+        return None
+    elif string.find("does not") != -1:
+        return None
+    else:
+        return string
+
+def find_valid_course_list(begin, end, step):
+    task = []
+    total = (end - begin)/step
+    done = 0
+    while begin < end:
+        URL = get_class_info_basic(str(begin))
+        if len(URL) > 30:
+            print begin
+            task.append(URL)
+        done += 1
+        if done % 10 == 0:
+            print done * 100 /total
+        begin = begin + step
+    return task
+
 def main():
+    find_valid_course_list(262660200, 262670000, 10)
+    
+def main1():
     l = list()
-    tasks = ["262660200", "262660210", "262660220", "262660230", "262660240"]
+    tasks = ["262660260"]
     for t in tasks:
-        URL = get_class_info_basic(t)
         l.append(get_class_info_detailed(URL))
     try:
         df = create_data_frame(l)
-        write_to_excel(df)
+        #write_to_excel(df)
+        print df
     except:
         print("ERR")
 
