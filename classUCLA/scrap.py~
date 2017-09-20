@@ -1,0 +1,18 @@
+#! /usr/bin/python
+
+import requests
+from bs4 import BeautifulSoup
+
+TERM = '17F'
+
+def get_web_page(index):    
+    URL = 'https://sa.ucla.edu/ro/public/soc/Results?t='+TERM+'&sBy=classidnumber&id='+index+'&undefined=Go&btnIsInIndex=btn_inIndex'
+    try:
+        r = requests.get(URL)
+    except:
+        
+
+    try:
+        soup = BeautifulSoup(r.text, 'html.parser')
+    except:
+        print("parser failed")

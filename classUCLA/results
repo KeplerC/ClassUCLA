@@ -1,0 +1,1691 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Search Results</title>
+<link href="/ro/iwe/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<meta content="width=device-width" name="viewport"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<link href="/ro/iwe/css/bundle/iweCssAll.min.css" rel="stylesheet"/>
+<link href="/ro/bundles/SOCCSS?v=7ClGtVqdE6NlL_nF16BfVCRF-PqttkL7u5sPPH_QHkE1" rel="stylesheet">
+<link href="/ro/bundles/SOCCSS?v=7ClGtVqdE6NlL_nF16BfVCRF-PqttkL7u5sPPH_QHkE1" rel="stylesheet"/>
+<script src="/ro/bundles/iwejsAll?v=PRHHCnGVwEXZOyOFmJ1Qx8E6L7L6HJSxpVmaNTvyMvI1"></script>
+<meta content="UCLA Registrar’s Office website offers information and resources for current students, prospective students, faculty and staff, and alumni. It is home to the quarterly Schedule of Classes, the General Catalog, important dates and deadlines, fee information, and more." id="MetaDescription" name="DESCRIPTION">
+<meta content="UCLA Registrar’s Office, UCLA RO" id="MetaKeywords" name="KEYWORDS"/>
+<meta content="INDEX, FOLLOW" id="MetaRobots" name="ROBOTS"/>
+<meta content="zjAXC1e76AE2lBm92435-YzpxFaHbqkALpdxBGC2P1k" name="google-site-verification"/>
+<script type="text/javascript">
+            PageConfig.AppRoot = "https://sa.ucla.edu/ro";
+            ApplicationSettings.init(PageConfig.AppRoot);
+        </script>
+</meta></link></head>
+<body class="ajax-none">
+<!-- Header -->
+<div class="global-header" id="global-header">
+<div class="container">
+<div class="row">
+<div class="col-xs-4" id="top-logo">
+<a href="http://www.ucla.edu" target="new">UCLA.edu</a>
+</div>
+<!-- /.region -->
+</div>
+</div>
+</div><header id="site-header">
+<nav class="navbar navbar-inverse" role="navigation">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#primary-nav" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="navbar-brand">
+<div id="logo">
+<a href="http://www.registrar.ucla.edu/">
+<img src="/ro/iwe/img/logo-registrars-white.png"/>
+</a>
+</div>
+</div>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="primary-nav">
+<div class="tools-nav">
+<div class="navbar-form">
+<div class="form-group">
+<span id="dnn_jscsHeader_dnnSEARCH_ClassicSearch">
+<span class="searchInputContainer" data-moreresults="See More Results" data-noresult="No Results Found">
+<input aria-label="Search" autocomplete="off" class="NormalTextBox" id="dnn_jscsHeader_dnnSEARCH_txtSearch" maxlength="255" name="dnn$jscsHeader$dnnSEARCH$txtSearch" placeholder="Search this site..." size="20" type="text"/>
+<a class="dnnSearchBoxClearText"></a>
+</span>
+<a "="" class="dnnSearch" id="dnn_jscsHeader_dnnSEARCH_cmdSearch"><i class="fa fa-search"></i></a>
+</span>
+<script type="text/javascript">
+    $(function() {
+        if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
+            var searchSkinObject = new dnn.searchSkinObject({
+                delayTriggerAutoSearch : 400,
+                minCharRequiredTriggerAutoSearch : 2,
+                searchType: 'S',
+                enableWildSearch: true,
+                cultureCode: 'en-US',
+                portalId: -1
+                }
+            );
+            searchSkinObject.init();
+            
+            
+            // attach classic search
+            var siteBtn = $('#dnn_jscsHeader_dnnSEARCH_SiteRadioButton');
+            var webBtn = $('#dnn_jscsHeader_dnnSEARCH_WebRadioButton');
+            var clickHandler = function() {
+                if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
+                else searchSkinObject.settings.searchType = 'W';
+            };
+            siteBtn.on('change', clickHandler);
+            webBtn.on('change', clickHandler);
+            
+            
+        }
+    });
+</script>
+</div>
+</div>
+<ul class="nav navbar-nav hidden-xs hidden-sm">
+<li class=""><a href="http://www.registrar.ucla.edu/Forms">Forms</a></li>
+<li class=""><a href="http://www.registrar.ucla.edu/Archives">Archives</a></li>
+</ul>
+</div>
+<!-- DDRmenu v02.00.01 - BootStrapNav template --><ul class="nav navbar-nav">
+<li class="dropdown depth0 ">
+<a href="#">Registration &amp; Classes<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Overview" target="">Overview</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment" target="">Registration and Payment<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Paying-Registration-Fees" target="">Paying Registration Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Conditions-of-Registration" target="">Conditions of Registration</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Holds" target="">Holds</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Declare-Nonattendance" target="">Declare Nonattendance</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Cancel-Registration" target="">Cancel Registration</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Withdrawal" target="">Withdrawal</a>
+</li>
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Refunds-Reductions" target="">Refunds and Reductions<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Refunds-and-Reductions/Refunds" target="">Refunds</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Refunds-and-Reductions/BruinDirect-Refund-Deposit" target="">BruinDirect Refund Deposit</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Refunds-and-Reductions/Graduate-Student-Refunds-and-Reductions" target="">Graduate Student Refunds and Reductions</a>
+</li>
+</ul>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-and-Payment/Reduced-Fee-Programs" target="">Reduced Fee Programs</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Registration-Payment/Paying-Fees/Student-Financial-Support-Directory" target="">Student Financial Support Directory</a>
+</li>
+</ul>
+</li>
+<li class=" depth1 ">
+<a href="https://sa.ucla.edu/ro/public/soc" target="">Schedule of Classes</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies" target="">Enrollment Policies<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Class-Levels" target="">Class Levels</a>
+</li>
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Enrollment-Restrictions" target="">Enrollment Restrictions<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Enrollment-Restrictions/Class-Restrictions" target="">Class Restrictions</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Enrollment-Restrictions/Requisites" target="">Requisites</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Enrollment-Restrictions/Impacted-Courses" target="">Impacted Courses</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Enrollment-Restrictions/Contract-Courses" target="">Contract Courses</a>
+</li>
+</ul>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Wait-Lists" target="">Wait Lists</a>
+</li>
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Class-Policies" target="">Class Policies<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Class-Policies/Password-Policy" target="">Password Policy</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Class-Policies/Auditing-Classes" target="">Auditing Classes</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Class-Policies/Class-Attendance" target="">Class Attendance</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Class-Policies/Class-Notes" target="">Class Notes</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Class-Policies/Use-of-Mobile-Devices" target="">Use of Mobile Devices</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Class-Policies/Plagiarism-and-Student-Copyright" target="">Plagiarism and Student Copyright</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Class-Policies/Student-Conduct-Policies" target="">Student Conduct Policies</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment" target="">Special Program Enrollment<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class="dropdown depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/Civic-Engagement-Opportunities" target="">Civic Engagement Opportunities<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth4 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/Civic-Engagement-Opportunities/Center-for-Community-Learning" target="">Center for Community Learning​</a>
+</li>
+<li class=" depth4 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/Civic-Engagement-Opportunities/Civic-Engagement-Minor" target="">Civic Engagement Minor</a>
+</li>
+<li class=" depth4 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/Civic-Engagement-Opportunities/Disability-Studies-Minor" target="">Disability Studies Minor</a>
+</li>
+<li class=" depth4 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/Civic-Engagement-Opportunities/UC-Center-Sacramento" target="">UC Center Sacramento</a>
+</li>
+<li class=" depth4 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/Civic-Engagement-Opportunities/Quarter-in-Washington-DC" target="">Quarter in Washington DC</a>
+</li>
+</ul>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/Distance-Learning-Language-Classes" target="">Distance Learning Language Classes</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/Concurrent-Enrollment" target="">Concurrent Enrollment</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/UC-Intercampus-Visitor-Program" target="">UC Intercampus Visitor Program</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/Simultaneous-UC-Enrollment" target="">Simultaneous UC Enrollment</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/UC-Cross-Campus-Online-Courses" target="">UC Cross-Campus Online Courses</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Policies/Special-Program-Enrollment/Intersegmental-Cross-Enrollment-Program" target="">Intersegmental Cross-Enrollment Program</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Appointments" target="">Enrollment Appointments and Passes<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Appointments-and-Passes/Undergraduate-Student-Enrollment-Passes" target="">Undergraduate Enrollment Passes</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Appointments/Graduate-Student-Enrollment" target="">Graduate Student Enrollment Passes</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Enrollment-Appointments/Enrollment-Appointments" target="">Enrollment Appointments</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Study-List" target="">Study List<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Study-List/Official-Study-List" target="">Official Study List</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Study-List/Study-List-Limits" target="">Study List Limits</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Study-List/Add-a-Class" target="">Add a Class</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Study-List/Drop-a-Class" target="">Drop a Class</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Study-List/Change-Class-Units" target="">Change Class Units</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Study-List/Change-Class-Grading-Basis" target="">Change Class Grading Basis</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Study-List/Late-Study-List" target="">Late Study List</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Examinations" target="">Examinations<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Examinations/Midterm-Examination-Policies" target="">Midterm Examination Policies</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Examinations/Final-Examination-Policies" target="">Final Examination Policies</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Examinations/Final-Examination-Schedules" target="">Final Examination Schedules</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Examinations/Alternate-Examination-Policies" target="">Alternate Examination Policies</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Absences-and-Readmission" target="">Absences and Readmission<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Absences-and-Readmission/One-Term-Absence" target="">One-Term Absence</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Absences-and-Readmission/Planned-Academic-Leave-PAL" target="">Planned Academic Leave (PAL)</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Absences-and-Readmission/Undergraduate-Readmission" target="">Undergraduate Readmission</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Absences-and-Readmission/Graduate-Student-Continuous-Registration-Policy" target="">Graduate Student Continuous Registration Policy</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Absences-and-Readmission/Graduate-Student-Leave-of-Absence" target="">Graduate Student Leave of Absence</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Absences-and-Readmission/Graduate-Student-Readmission" target="">Graduate Student Readmission</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Graduation" target="">Graduation<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Graduation/Tips-for-Graduating-Seniors" target="">Tips for Graduating Seniors</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Graduation/Declare-Candidacy" target="">Declare Candidacy</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Graduation/Advancement-to-Candidacy" target="">Advancement to Candidacy</a>
+</li>
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Graduation/Final-Degree-Audit" target="">Final Degree Audit<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Graduation/Final-Degree-Audit/Undergraduate-Degree-Checks" target="">Undergraduate Degree Checks</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Graduation/Final-Degree-Audit/Application-of-Transfer-Credit" target="">Application of Transfer Credit</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Graduation/Final-Degree-Audit/Notation-of-Minor-on-Diploma" target="">Notation of Minor on Diploma</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Graduation/Final-Degree-Audit/Honors" target="">Honors</a>
+</li>
+</ul>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Registration-Classes/Graduation/In-Absentia-Graduation" target="">In Absentia Graduation</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Academic-Transcript/Transcript-Availability" target="">Final Transcript</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Diplomas" target="">Diploma</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown depth0 ">
+<a href="#">Fees &amp; Residence<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Overview" target="">Overview</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Residence-Requirements" target="">Residence Requirements<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Residence-Requirements/UC-Residence-Guidelines" target="">UC Residence Guidelines</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Residence-Requirements/Residence-Determination" target="">Residence Determination</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Residence-Requirements/Classification-as-a-Resident" target="">Classification as a Resident</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Residence-Requirements/Nonresident-Supplemental-Tuition-Exemptions" target="">Nonresident Supplemental Tuition Exemptions</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Residence-Requirements/Statement-Legal-Residence" target="">Statement of Legal Residence</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Residence-Requirements/Appeal-a-Nonresident-Classification" target="">Appeal a Nonresident Classification</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Residence-Requirements/Residence-Contacts" target="">Residence Contacts</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees" target="">Annual Fees<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Undergraduate-Degree-Fees" target="">Undergraduate Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Academic-Masters-Degree-Fees" target="">Academic Master's Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Academic-Doctoral-Degrees" target="">Academic Doctoral Degrees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Architecture-MArch-I-Degree-Fees" target="">Architecture MArch I Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Art-MFA-Degree-Fees" target="">Art MFA Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Dentistry-DDS-Degree-Fees" target="">Dentistry DDS Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Environmental-Science-and-Engineering-DEnv-Degree-Fees" target="">Environmental Science and Engineering DEnv Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Film-and-Television-MFA-Degree-Fees" target="">Film and Television MFA Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Law-JD-Degree-Fees" target="">Law JD Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Medicine-MD-Degree-Fees" target="">Medicine MD Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Nursing-MSN-Degree-Fees" target="">Nursing MSN Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Public-Health-MPH-Degree-Fees" target="">Public Health MPH Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Public-Health-DrPH-Degree-Fees" target="">Public Health DrPH Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Public-Policy-MPP-Degree-Fees" target="">Public Policy MPP Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Social-Welfare-MSW-Degree-Fees" target="">Social Welfare MSW Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Theater-MFA-Degree-Fees" target="">Theater MFA Degree Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Annual-Fees/Urban-Planning-MURP-Degree-Fees" target="">Urban Planning MURP Degree Fees</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees" target="">Term Fees<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017" target="">Fall Quarter 2017<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Undergraduate-Degree-Fees" target="">Undergraduate Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Academic-Masters-Degree-Fees" target="">Academic Master's Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Academic-Doctorate-Degree-Fees" target="">Academic Doctorate Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Architecture-MArch-I-Degree-Fees" target="">Architecture MArch I Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Art-MFA-Degree-Fees" target="">Art MFA Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Dentistry-DDS-Degree-Fees" target="">Dentistry DDS Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Environmental-Science-and-Engineering-DEnv-Degree-Fees" target="">Environmental Science and Engineering DEnv Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Film-and-Television-MFA-Degree-Fees" target="">Film and Television MFA Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Nursing-MSN-Degree-Fees" target="">Nursing MSN Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Public-Health-MPH-Degree-Fees" target="">Public Health MPH Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Public-Health-DrPH-Degree-Fees" target="">Public Health DrPH Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Public-Policy-MPP-Degree-Fees" target="">Public Policy MPP Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Social-Welfare-MSW-Degree-Fees" target="">Social Welfare MSW Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Theater-MFA-Degree-Fees" target="">Theater MFA Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Quarter-2017/Urban-Planning-MURP-Degree-Fees" target="">Urban Planning MURP Degree Fees</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017" target="">Spring Quarter 2017<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Undergraduate-Degree-Fees" target="">Undergraduate Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Academic-Masters-Degree-Fees" target="">Academic Master’s Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Academic-Doctoral-Degree-Fees" target="">Academic Doctoral Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Architecture-MArch-I-Degree-Fees" target="">Architecture M Arch I Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Art-MFA-Degree-Fees" target="">Art MFA Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Dentistry-DDS-Degree-Fees" target="">Dentistry DDS Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Environmental-Science-and-Engineering-D-Env-Degree-Fees" target="">Environmental Science and Engineering D Env Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Film-and-Television-MFA-Degree-Fees" target="">Film and Television MFA Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Nursing-MSN-Degree-Fees" target="">Nursing MSN Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Public-Health-MPH-Degree-Fees" target="">Public Health MPH Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Public-Health-Dr-PH-Degree-Fees" target="">Public Health Dr PH Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Public-Policy-MPP-Degree-Fees" target="">Public Policy MPP Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Social-Welfare-MSW-Degree-Fees" target="">Social Welfare MSW Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Theater-MFA-Degree-Fees" target="">Theater MFA Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Quarter-2017/Urban-Planning-MURP-Degree-Fees" target="">Urban Planning MURP Degree Fees</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Semester-2017-JD-MD" target="">Fall Semester 2017 (JD, MD)<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Semester-2017-JD-MD/Law-JD-Degree-Fees" target="">Law JD Degree Fees</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Fall-Semester-2017-JD-MD/Medicine-MD-Degree-Fees" target="">Medicine MD Degree Fees</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Semester-2017-JD-MD" target="">Spring Semester 2017 (JD, MD)<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Semester-2017-JD-MD/Law-JD" target="">Law JD</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Spring-Semester-2017-JD-MD/Medicine-MD" target="">Medicine MD</a>
+</li>
+</ul>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Graduate-Student-in-Absentia-Fees" target="">Graduate Student in Absentia Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Health-Sciences-Summer-Fees-Medicine-Dentistry" target="">Health Sciences Summer Fees (Medicine, Dentistry)</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Term-Fees/Refund-Schedules" target="">Refund Schedules</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Course-and-Study-List-Fees" target="">Course and Study List Fees<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Course-and-Study-List-Fees/Undergraduate-Study-List-Deadlines-and-Fees" target="">Undergraduate Study List Deadlines and Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Course-and-Study-List-Fees/Graduate-Student-Study-List-Deadlines-and-Fees" target="">Graduate Student Study List Deadlines and Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Course-and-Study-List-Fees/Course-Materials-Fees" target="">Course Materials Fees</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Course-and-Study-List-Fees/Examination-Fees" target="">Examination Fees</a>
+</li>
+</ul>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Document-and-Service-Fees" target="">Document and Service Fees</a>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Transcript-Related-Fees" target="">Transcript-Related Fees</a>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Degree-and-Diploma-Fees" target="">Degree and Diploma Fees</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Fee-Descriptions" target="">Fee Descriptions<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Fees-Residence/Fee-Descriptions/Referenda-Fees" target="">Referenda Fees</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown depth0 ">
+<a href="#">Academics<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Academics/Overview" target="">Overview</a>
+</li>
+<li class=" depth1 ">
+<a href="http://catalog.registrar.ucla.edu" target="_new">General Catalog</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Academics/Course-Descriptions" target="">Course Descriptions<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Academics/Course-Descriptions/Course-Numbering-and-Description-Guide" target="">Course Numbering and Description Guide</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Academics/Diversity-Requirement" target="">Diversity Requirement<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Academics/Diversity-Requirement/College-of-Letters-and-Science-Diversity-Requirement" target="">College of Letters and Science Diversity Requirement</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Academics/Diversity-Requirement/School-of-Music-Diversity-Requirement" target="">School of Music Diversity Requirement</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Academics/Diversity-Requirement/School-of-the-Arts-and-Architecture-Diversity-Requirement" target="">School of the Arts and Architecture Diversity Requirement</a>
+</li>
+</ul>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Academics/Foreign-Language-Requirement" target="">Foreign Language Requirement</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Academics/GE-Requirement" target="">GE Requirement<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Academics/GE-Requirement/Campuswide-GE-Requirements-Overview" target="">Campuswide GE Requirements Overview</a>
+</li>
+</ul>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Academics/Writing-II-Requirement" target="">Writing II Requirement</a>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Academics/Departments-Programs-and-Freestanding-Minors" target="">Departments, Programs, and Freestanding Minors</a>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Academics/Academic-Counseling" target="">Academic Counseling</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth0 ">
+<a href="#">Student Records<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Overview" target="">Overview</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Personal-Information" target="">Personal Information<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Personal-Information/Address-Change" target="">Address Change</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Personal-Information/Legal-Name-Change" target="">Legal Name Change</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Personal-Information/Preferred-First-Name" target="">Preferred First Name</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Academic-Transcript" target="">Academic Transcript<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Academic-Transcript/Academic-Transcript-Format" target="">Academic Transcript Format</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Academic-Transcript/Transcript-Availability" target="">Transcript Availability</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Academic-Transcript/Order-an-Academic-Transcript" target="">Order an Academic Transcript</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Academic-Transcript/Authorize-an-Agent" target="">Authorize an Agent</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Academic-Transcript/Unofficial-Transcript" target="">Unofficial Transcript</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Academic-Transcript/Transcripts-and-the-Common-Application" target="">Transcripts and the Common Application</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Academic-Transcript/Student-Record-Inspection-and-Subpoenas" target="">Student Record Inspection and Subpoenas</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Verification-Transcript" target="">Verification Transcript<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Verification-Transcript/Verification-Transcript-Format" target="">Verification Transcript Format</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Verification-Transcript/Order-a-Verification-Transcript" target="">Order a Verification Transcript</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Verification-Transcript/Third-Party-Verification" target="">Third-Party Verification</a>
+</li>
+</ul>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Grades-and-Academic-Revisions" target="">Grades and Academic Revisions</a>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Student-Rights-Privacy" target="">Student Rights and Privacy</a>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Closure-of-Student-Record" target="">Closure of Student Record</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Diplomas" target="">Diplomas<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Diplomas/Diploma-Request" target="">Diploma Request</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Diplomas/Diploma-Availability" target="">Diploma Availability</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Diplomas/Name-Change-Special-Marks-and-Errors" target="">Name Change, Special Marks, and Errors</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Diplomas/Diploma-Format" target="">Diploma Format</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Diplomas/Replacement-Diploma" target="">Replacement Diploma</a>
+</li>
+</ul>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Notary-Services" target="">Notary Services</a>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Veteran-Services" target="">Veteran Services</a>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Student-Records/Professional-School-and-Extension-Transcripts" target="">Professional School and Extension Transcripts</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth0 ">
+<a href="#">Calendars<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Calendars/Overview" target="">Overview</a>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Calendars/Annual-Academic-Calendar" target="">Annual Academic Calendar</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Calendars/Term-Calendar" target="">Term Calendar<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Calendars/Term-Calendar/Fall-Quarter-2017-Calendar" target="">Fall Quarter 2017 Calendar</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Calendars/Term-Calendar/Fall-Quarter-2016-Calendar" target="">Fall Quarter 2016 Calendar</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Calendars/Term-Calendar/Winter-Quarter-2017-Calendar" target="">Winter Quarter 2017 Calendar</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Calendars/Term-Calendar/Spring-Quarter-2017-Calendar" target="">Spring Quarter 2017 Calendar</a>
+</li>
+</ul>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Calendars/Professional-School-Calendars" target="">Professional School Calendars</a>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Calendars/Summer-Session-Calendar" target="">Summer Session Calendar</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth0 ">
+<a href="#">Faculty &amp; Staff<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Overview" target="">Overview</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling" target="">Classrooms and Scheduling<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling/Class-Scheduling-Guide" target="">Class Scheduling Guide</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling/General-Assignment-Classroom-Inventory" target="">General Assignment Classroom Inventory</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling/Building-List" target="">Building List</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling/Room-Scheduling-Policy" target="">Room Scheduling Policy</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling/Schedule-of-Classes-Production-Deadlines" target="">Schedule of Classes Production Deadlines</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling/Schedule-of-Classes-Enrollment-Report" target="">Schedule of Classes Enrollment Report</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling/Schedule-of-Classes-Department-Proof" target="">Schedule of Classes Department Proof</a>
+</li>
+<li class=" depth2 ">
+<a href="https://sa.ucla.edu/ro/public/soc/search/IndividualStudy" target="">Graduate Individual Studies Classes Master List</a>
+</li>
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling/Classroom-Grid-Search" target="">Classroom Grid Search<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling/Classroom-Grid-Search/Classroom-Details" target="">Classroom Details</a>
+</li>
+</ul>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Classrooms-and-Scheduling/Class-Scheduling-Training" target="">Class Scheduling Training</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs" target="">Courses and Programs<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Course-Inventory-Management-System" target="">Course Inventory Management System (CIMS)</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Course-and-Program-Guides" target="">Course and Program Guides</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Catalog-Production-Deadlines" target="">Catalog Production Deadlines</a>
+</li>
+<li class="dropdown depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Major-and-Minor-Codes" target="">Major and Minor Codes<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Major-and-Minor-Codes/Undergraduate-Majors-and-Premajors" target="">Undergraduate Majors and Premajors</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Major-and-Minor-Codes/Discontinued-Undergraduate-Majors-and-Premajors" target="">Discontinued Undergraduate Majors and Premajors</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Major-and-Minor-Codes/Undergraduate-Minors" target="">Undergraduate Minors</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Major-and-Minor-Codes/Discontinued-Undergraduate-Minors" target="">Discontinued Undergraduate Minors</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Major-and-Minor-Codes/Undergraduate-Specializations" target="">Undergraduate Specializations</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Major-and-Minor-Codes/Graduate-Majors" target="">Graduate Majors</a>
+</li>
+<li class=" depth3 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs-Creation/Major-and-Minor-Codes/Discontinued-Graduate-Majors" target="">Discontinued Graduate Majors</a>
+</li>
+</ul>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Courses-and-Programs/Department-and-Subject-Area-Codes" target="">Department and Subject Area Codes</a>
+</li>
+</ul>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Accessing-Student-Data" target="">Accessing Student Data<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Accessing-Student-Data/Student-Data-Access-Policy" target="">Student Data Access Policy</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Accessing-Student-Data/Student-Affairs-Web-SAWeb" target="">Student Affairs Web (SAWeb)</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Accessing-Student-Data/Registrars-Service-Request-RSR" target="">Registrar’s Service Request (RSR)</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Accessing-Student-Data/SRS-and-SAWeb-Training" target="">SRS and SAWeb Training</a>
+</li>
+</ul>
+</li>
+<li class=" depth1 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/Grade-Submission-Deadlines" target="">Grade Submission Deadlines</a>
+</li>
+<li class="dropdown depth1 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/FERPA" target="">FERPA<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/FERPA/Disclosure-of-Student-Records" target="">Disclosure of Student Records</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/FERPA/FERPA-for-Faculty" target="">FERPA for Faculty</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/FERPA/FERPA-Tutorial-and-Quiz" target="">FERPA Tutorial and Quiz</a>
+</li>
+<li class=" depth2 ">
+<a href="http://www.registrar.ucla.edu/Faculty-Staff/FERPA/FERPA-Training" target="">FERPA Training</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="visible-xs visible-sm"><a href="http://www.registrar.ucla.edu/Forms">Forms</a></li>
+<li class="visible-xs visible-sm"><a href="http://www.registrar.ucla.edu/Archives">Archives</a></li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container-fluid -->
+</nav>
+</header>
+<!--End of Header -->
+<div id="pagewrap">
+<div class="container">
+<div id="content">
+<div class="breadcrumbs" id="breadcrumb">
+<ol class="breadcrumb">
+<li>
+<a href="http://www.registrar.ucla.edu/">Home</a> /
+            </li>
+<span id="breadcrump">
+<a class="breadcrumb" href="http://www.registrar.ucla.edu/Registration-Classes/Overview">Registration &amp; Classes</a> /
+                    <a class="breadcrumb" href="https://sa.ucla.edu/ro/public/soc">Schedule of Classes</a>
+<span class="breadcrumb">/ Search Results</span>
+</span>
+</ol>
+</div>
+<div class="page-header">
+<h1>Search Results</h1>
+</div>
+<div class="row">
+<div class="ContainerPane lead">
+<div class="Normal">
+You may start a new search to search again or use the filter results to revise your current search results.<div class="message info">The number of open seats (status) for each section is updated once per hour.  Status as of 10:09 PM.</div><span class="label info light">Student Reminder</span> To see real-time enrollment counts and to enroll classes into your study list, use the MyUCLA <strong><a href="http://my.ucla.edu/directLink.aspx?featureID=203">Find a Class and Enroll</a></strong> and <strong><a href="http://my.ucla.edu/directLink.aspx?featureID=10">Class Planner</a></strong> features.        </div>
+</div>
+<div id="newAutoscrollSpeed" style="display: none;" title="300"></div>
+<div id="classPlannerPath" style="display: none;"></div>
+<div id="soc-search">
+<button class="button primary" id="btn_start_search">Start New Search</button>
+<div class="div-search hideOrShow search_overlay" id="div_simple_search">
+<div id="search_panel">
+<div class="" id="div_term_details">
+<div class="hide-xsmall" id="div_term_header">
+<h2 id="term_header">
+            Term: Fall 2017</h2>
+</div>
+<select autocomplete="off" class="select_filter_term" id="optSelectTerm" name="t">
+<optgroup class="select_term_group" label="2018">
+<option class="select_term" data-yeartext="Spring 2018" value="18S">Spring</option>
+<option class="select_term" data-yeartext="Winter 2018" value="18W">Winter</option>
+</optgroup>
+<optgroup class="select_term_group" label="2017">
+<option class="select_term" data-yeartext="Fall 2017" selected="selected" value="17F">Fall</option>
+<option class="select_term" data-yeartext="Summer Sessions 2017" value="171">Summer Sessions</option>
+<option class="select_term" data-yeartext="Spring 2017" value="17S">Spring</option>
+<option class="select_term" data-yeartext="Winter 2017" value="17W">Winter</option>
+</optgroup>
+<optgroup class="select_term_group" label="2016">
+<option class="select_term" data-yeartext="Fall 2016" value="16F">Fall</option>
+</optgroup>
+</select>
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($('#step-navigation') != null && $('#step-navigation') != undefined) {
+            //disable the term selection if in exchange mode (step navigation exists)
+            if ($("#step-navigation").children().length != 0) {
+                if ($("#optSelectTerm")) {
+                    $("#optSelectTerm").attr('disabled', 'disabled');
+                }
+
+            }
+
+
+        }
+    });
+</script>
+</div>
+<div class="" id="div_search_criteria">
+<div class="hide-xsmall" id="div_search_criteria_header">
+<h2 id="span_search_criteria">
+            Search Criteria</h2>
+</div>
+<div class="close-toggle" id="div_searchBy">
+<span class="hide-xsmall" id="span_searchBy">Search By: </span>
+<select id="search_by" name="sBy">
+<option selected="selected" value="subject">Subject Area</option>
+<option value="geclass">General Education (GE) Classes</option>
+<option value="classidnumber">Class ID</option>
+<option value="writing2">Writing II Classes</option>
+<option value="units">Class Units</option>
+<option value="fiatlux">Fiat Lux Classes</option>
+<option value="online">Online Classes</option>
+<option value="instructor">Instructor</option>
+<option value="diversity">Diversity Classes</option>
+<option value="service">Service Learning Classes</option>
+</select>
+</div>
+</div>
+<div>
+<div id="partial_content">
+<div id="div_subjectArea">
+<div class="positionRelative" id="div_subject_container">
+<div class="hideOrShow" id="div_infomsg_searchPanel"><img alt="info icon" height="17" src="/ro/iwe/img/info_icon.gif" width="17"><span id="searchPanelInfoMsg"></span></img></div>
+<div class="ui-widget" id="div_subject">
+<input class="search_input" id="select_filter_subject" name="sName" type="text">
+<input id="subject_area" name="subj" type="hidden"/>
+</input></div>
+</div>
+<div class="ui-widget hideOrShow" id="div_catalog">
+<input class="search_input" id="select_filter_catalog" name="crsCatlg" type="text"/>
+<input id="catalog" name="catlg" type="hidden"/>
+</div>
+<input id="subjectArea_classNo" name="cls_no" type="hidden"/>
+</div>
+<div class="control" id="div_btn_go">
+<input class="button" id="btn_go" style="display:none;" type="submit" value="Go"/>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        AdjustGoButton();
+        var subjects = '[{&quot;label&quot;:&quot;Aerospace Studies (AERO ST)&quot;,&quot;value&quot;:&quot;AERO ST&quot;},{&quot;label&quot;:&quot;African American Studies (AF AMER)&quot;,&quot;value&quot;:&quot;AF AMER&quot;},{&quot;label&quot;:&quot;African Studies (AFRC ST)&quot;,&quot;value&quot;:&quot;AFRC ST&quot;},{&quot;label&quot;:&quot;American Indian Studies (AM IND)&quot;,&quot;value&quot;:&quot;AM IND&quot;},{&quot;label&quot;:&quot;American Sign Language (ASL)&quot;,&quot;value&quot;:&quot;ASL&quot;},{&quot;label&quot;:&quot;Ancient Near East (AN N EA)&quot;,&quot;value&quot;:&quot;AN N EA&quot;},{&quot;label&quot;:&quot;Anesthesiology (ANES)&quot;,&quot;value&quot;:&quot;ANES&quot;},{&quot;label&quot;:&quot;Anthropology (ANTHRO)&quot;,&quot;value&quot;:&quot;ANTHRO&quot;},{&quot;label&quot;:&quot;Applied Linguistics (APPLING)&quot;,&quot;value&quot;:&quot;APPLING&quot;},{&quot;label&quot;:&quot;Arabic&quot;,&quot;value&quot;:&quot;ARABIC&quot;},{&quot;label&quot;:&quot;Archaeology (ARCHEOL)&quot;,&quot;value&quot;:&quot;ARCHEOL&quot;},{&quot;label&quot;:&quot;Architecture and Urban Design (ARCH\u0026UD)&quot;,&quot;value&quot;:&quot;ARCH\u0026UD&quot;},{&quot;label&quot;:&quot;Armenian (ARMENIA)&quot;,&quot;value&quot;:&quot;ARMENIA&quot;},{&quot;label&quot;:&quot;Art&quot;,&quot;value&quot;:&quot;ART&quot;},{&quot;label&quot;:&quot;Art History (ART HIS)&quot;,&quot;value&quot;:&quot;ART HIS&quot;},{&quot;label&quot;:&quot;Arts and Architecture (ART\u0026ARC)&quot;,&quot;value&quot;:&quot;ART\u0026ARC&quot;},{&quot;label&quot;:&quot;Arts Education (ARTS ED)&quot;,&quot;value&quot;:&quot;ARTS ED&quot;},{&quot;label&quot;:&quot;Asian&quot;,&quot;value&quot;:&quot;ASIAN&quot;},{&quot;label&quot;:&quot;Asian American Studies (ASIA AM)&quot;,&quot;value&quot;:&quot;ASIA AM&quot;},{&quot;label&quot;:&quot;Astronomy (ASTR)&quot;,&quot;value&quot;:&quot;ASTR&quot;},{&quot;label&quot;:&quot;Atmospheric and Oceanic Sciences (A\u0026O SCI)&quot;,&quot;value&quot;:&quot;A\u0026O SCI&quot;},{&quot;label&quot;:&quot;Bioengineering (BIOENGR)&quot;,&quot;value&quot;:&quot;BIOENGR&quot;},{&quot;label&quot;:&quot;Bioinformatics (Graduate) (BIOINFO)&quot;,&quot;value&quot;:&quot;BIOINFO&quot;},{&quot;label&quot;:&quot;Biological Chemistry (BIOL CH)&quot;,&quot;value&quot;:&quot;BIOL CH&quot;},{&quot;label&quot;:&quot;Biomathematics (BIOMATH)&quot;,&quot;value&quot;:&quot;BIOMATH&quot;},{&quot;label&quot;:&quot;Biomedical Research (BMD RES)&quot;,&quot;value&quot;:&quot;BMD RES&quot;},{&quot;label&quot;:&quot;Biostatistics (BIOSTAT)&quot;,&quot;value&quot;:&quot;BIOSTAT&quot;},{&quot;label&quot;:&quot;Central and East European Studies (C\u0026EE ST)&quot;,&quot;value&quot;:&quot;C\u0026EE ST&quot;},{&quot;label&quot;:&quot;Chemical Engineering (CH ENGR)&quot;,&quot;value&quot;:&quot;CH ENGR&quot;},{&quot;label&quot;:&quot;Chemistry and Biochemistry (CHEM)&quot;,&quot;value&quot;:&quot;CHEM&quot;},{&quot;label&quot;:&quot;Chicana and Chicano Studies (CHICANO)&quot;,&quot;value&quot;:&quot;CHICANO&quot;},{&quot;label&quot;:&quot;Chinese (CHIN)&quot;,&quot;value&quot;:&quot;CHIN&quot;},{&quot;label&quot;:&quot;Civic Engagement (CIVIC)&quot;,&quot;value&quot;:&quot;CIVIC&quot;},{&quot;label&quot;:&quot;Civil and Environmental Engineering (C\u0026EE)&quot;,&quot;value&quot;:&quot;C\u0026EE&quot;},{&quot;label&quot;:&quot;Classics (CLASSIC)&quot;,&quot;value&quot;:&quot;CLASSIC&quot;},{&quot;label&quot;:&quot;Clusters (CLUSTER)&quot;,&quot;value&quot;:&quot;CLUSTER&quot;},{&quot;label&quot;:&quot;Communication (COMM)&quot;,&quot;value&quot;:&quot;COMM&quot;},{&quot;label&quot;:&quot;Community Health Sciences (COM HLT)&quot;,&quot;value&quot;:&quot;COM HLT&quot;},{&quot;label&quot;:&quot;Comparative Literature (COM LIT)&quot;,&quot;value&quot;:&quot;COM LIT&quot;},{&quot;label&quot;:&quot;Computer Science (COM SCI)&quot;,&quot;value&quot;:&quot;COM SCI&quot;},{&quot;label&quot;:&quot;Conservation of Archaeological and Ethnographic Materials (CAEM)&quot;,&quot;value&quot;:&quot;CAEM&quot;},{&quot;label&quot;:&quot;Dance&quot;,&quot;value&quot;:&quot;DANCE&quot;},{&quot;label&quot;:&quot;Design / Media Arts (DESMA)&quot;,&quot;value&quot;:&quot;DESMA&quot;},{&quot;label&quot;:&quot;Digital Humanities (DGT HUM)&quot;,&quot;value&quot;:&quot;DGT HUM&quot;},{&quot;label&quot;:&quot;Disability Studies (DIS STD)&quot;,&quot;value&quot;:&quot;DIS STD&quot;},{&quot;label&quot;:&quot;Dutch&quot;,&quot;value&quot;:&quot;DUTCH&quot;},{&quot;label&quot;:&quot;Earth, Planetary, and Space Sciences (EPS SCI)&quot;,&quot;value&quot;:&quot;EPS SCI&quot;},{&quot;label&quot;:&quot;Ecology and Evolutionary Biology (EE BIOL)&quot;,&quot;value&quot;:&quot;EE BIOL&quot;},{&quot;label&quot;:&quot;Economics (ECON)&quot;,&quot;value&quot;:&quot;ECON&quot;},{&quot;label&quot;:&quot;Education (EDUC)&quot;,&quot;value&quot;:&quot;EDUC&quot;},{&quot;label&quot;:&quot;Electrical Engineering (EL ENGR)&quot;,&quot;value&quot;:&quot;EL ENGR&quot;},{&quot;label&quot;:&quot;Engineering (ENGR)&quot;,&quot;value&quot;:&quot;ENGR&quot;},{&quot;label&quot;:&quot;English (ENGL)&quot;,&quot;value&quot;:&quot;ENGL&quot;},{&quot;label&quot;:&quot;English as A Second Language (ESL)&quot;,&quot;value&quot;:&quot;ESL&quot;},{&quot;label&quot;:&quot;English Composition (ENGCOMP)&quot;,&quot;value&quot;:&quot;ENGCOMP&quot;},{&quot;label&quot;:&quot;Environment (ENVIRON)&quot;,&quot;value&quot;:&quot;ENVIRON&quot;},{&quot;label&quot;:&quot;Environmental Health Sciences (ENV HLT)&quot;,&quot;value&quot;:&quot;ENV HLT&quot;},{&quot;label&quot;:&quot;Epidemiology (EPIDEM)&quot;,&quot;value&quot;:&quot;EPIDEM&quot;},{&quot;label&quot;:&quot;Ethnomusicology (ETHNMUS)&quot;,&quot;value&quot;:&quot;ETHNMUS&quot;},{&quot;label&quot;:&quot;Filipino (FILIPNO)&quot;,&quot;value&quot;:&quot;FILIPNO&quot;},{&quot;label&quot;:&quot;Film and Television (FILM TV)&quot;,&quot;value&quot;:&quot;FILM TV&quot;},{&quot;label&quot;:&quot;French (FRNCH)&quot;,&quot;value&quot;:&quot;FRNCH&quot;},{&quot;label&quot;:&quot;Gender Studies (GENDER)&quot;,&quot;value&quot;:&quot;GENDER&quot;},{&quot;label&quot;:&quot;Geography (GEOG)&quot;,&quot;value&quot;:&quot;GEOG&quot;},{&quot;label&quot;:&quot;German&quot;,&quot;value&quot;:&quot;GERMAN&quot;},{&quot;label&quot;:&quot;Gerontology (GRNTLGY)&quot;,&quot;value&quot;:&quot;GRNTLGY&quot;},{&quot;label&quot;:&quot;Global Studies (GLBL ST)&quot;,&quot;value&quot;:&quot;GLBL ST&quot;},{&quot;label&quot;:&quot;Greek&quot;,&quot;value&quot;:&quot;GREEK&quot;},{&quot;label&quot;:&quot;Health Policy and Management (HLT POL)&quot;,&quot;value&quot;:&quot;HLT POL&quot;},{&quot;label&quot;:&quot;Hebrew&quot;,&quot;value&quot;:&quot;HEBREW&quot;},{&quot;label&quot;:&quot;Hindi-Urdu (HIN-URD)&quot;,&quot;value&quot;:&quot;HIN-URD&quot;},{&quot;label&quot;:&quot;History (HIST)&quot;,&quot;value&quot;:&quot;HIST&quot;},{&quot;label&quot;:&quot;Honors Collegium (HNRS)&quot;,&quot;value&quot;:&quot;HNRS&quot;},{&quot;label&quot;:&quot;Human Genetics (HUM GEN)&quot;,&quot;value&quot;:&quot;HUM GEN&quot;},{&quot;label&quot;:&quot;Hungarian (HNGAR)&quot;,&quot;value&quot;:&quot;HNGAR&quot;},{&quot;label&quot;:&quot;Indigenous Languages of the Americas (IL AMER)&quot;,&quot;value&quot;:&quot;IL AMER&quot;},{&quot;label&quot;:&quot;Indo-European Studies (I E STD)&quot;,&quot;value&quot;:&quot;I E STD&quot;},{&quot;label&quot;:&quot;Indonesian (INDO)&quot;,&quot;value&quot;:&quot;INDO&quot;},{&quot;label&quot;:&quot;Information Studies (INF STD)&quot;,&quot;value&quot;:&quot;INF STD&quot;},{&quot;label&quot;:&quot;International and Area Studies (I A STD)&quot;,&quot;value&quot;:&quot;I A STD&quot;},{&quot;label&quot;:&quot;International Development Studies (INTL DV)&quot;,&quot;value&quot;:&quot;INTL DV&quot;},{&quot;label&quot;:&quot;International Migration Studies (I M STD)&quot;,&quot;value&quot;:&quot;I M STD&quot;},{&quot;label&quot;:&quot;Iranian&quot;,&quot;value&quot;:&quot;IRANIAN&quot;},{&quot;label&quot;:&quot;Islamic Studies (ISLM ST)&quot;,&quot;value&quot;:&quot;ISLM ST&quot;},{&quot;label&quot;:&quot;Italian&quot;,&quot;value&quot;:&quot;ITALIAN&quot;},{&quot;label&quot;:&quot;Japanese (JAPAN)&quot;,&quot;value&quot;:&quot;JAPAN&quot;},{&quot;label&quot;:&quot;Jewish Studies (JEWISH)&quot;,&quot;value&quot;:&quot;JEWISH&quot;},{&quot;label&quot;:&quot;Korean (KOREA)&quot;,&quot;value&quot;:&quot;KOREA&quot;},{&quot;label&quot;:&quot;Labor and Workplace Studies (LBR\u0026WS)&quot;,&quot;value&quot;:&quot;LBR\u0026WS&quot;},{&quot;label&quot;:&quot;Latin&quot;,&quot;value&quot;:&quot;LATIN&quot;},{&quot;label&quot;:&quot;Latin American Studies (LATN AM)&quot;,&quot;value&quot;:&quot;LATN AM&quot;},{&quot;label&quot;:&quot;Law&quot;,&quot;value&quot;:&quot;LAW&quot;},{&quot;label&quot;:&quot;Lesbian, Gay, Bisexual, Transgender, and Queer Studies (LGBTQS)&quot;,&quot;value&quot;:&quot;LGBTQS&quot;},{&quot;label&quot;:&quot;Life Sciences (LIFESCI)&quot;,&quot;value&quot;:&quot;LIFESCI&quot;},{&quot;label&quot;:&quot;Linguistics (LING)&quot;,&quot;value&quot;:&quot;LING&quot;},{&quot;label&quot;:&quot;Management (MGMT)&quot;,&quot;value&quot;:&quot;MGMT&quot;},{&quot;label&quot;:&quot;Materials Science and Engineering (MAT SCI)&quot;,&quot;value&quot;:&quot;MAT SCI&quot;},{&quot;label&quot;:&quot;Mathematics (MATH)&quot;,&quot;value&quot;:&quot;MATH&quot;},{&quot;label&quot;:&quot;Mechanical and Aerospace Engineering (MECH\u0026AE)&quot;,&quot;value&quot;:&quot;MECH\u0026AE&quot;},{&quot;label&quot;:&quot;Medicine (MED)&quot;,&quot;value&quot;:&quot;MED&quot;},{&quot;label&quot;:&quot;Microbiology, Immunology, and Molecular Genetics (MIMG)&quot;,&quot;value&quot;:&quot;MIMG&quot;},{&quot;label&quot;:&quot;Middle Eastern Studies (M E STD)&quot;,&quot;value&quot;:&quot;M E STD&quot;},{&quot;label&quot;:&quot;Military Science (MIL SCI)&quot;,&quot;value&quot;:&quot;MIL SCI&quot;},{&quot;label&quot;:&quot;Molecular and Medical Pharmacology (M PHARM)&quot;,&quot;value&quot;:&quot;M PHARM&quot;},{&quot;label&quot;:&quot;Molecular Biology (MOL BIO)&quot;,&quot;value&quot;:&quot;MOL BIO&quot;},{&quot;label&quot;:&quot;Molecular Toxicology (MOL TOX)&quot;,&quot;value&quot;:&quot;MOL TOX&quot;},{&quot;label&quot;:&quot;Molecular, Cell, and Developmental Biology (MCD BIO)&quot;,&quot;value&quot;:&quot;MCD BIO&quot;},{&quot;label&quot;:&quot;Molecular, Cellular, and Integrative Physiology (MC\u0026IP)&quot;,&quot;value&quot;:&quot;MC\u0026IP&quot;},{&quot;label&quot;:&quot;Music (MUSC)&quot;,&quot;value&quot;:&quot;MUSC&quot;},{&quot;label&quot;:&quot;Music History (MSC HST)&quot;,&quot;value&quot;:&quot;MSC HST&quot;},{&quot;label&quot;:&quot;Music Industry (MSC IND)&quot;,&quot;value&quot;:&quot;MSC IND&quot;},{&quot;label&quot;:&quot;Musicology (MUSCLG)&quot;,&quot;value&quot;:&quot;MUSCLG&quot;},{&quot;label&quot;:&quot;Naval Science (NAV SCI)&quot;,&quot;value&quot;:&quot;NAV SCI&quot;},{&quot;label&quot;:&quot;Near Eastern Languages (NR EAST)&quot;,&quot;value&quot;:&quot;NR EAST&quot;},{&quot;label&quot;:&quot;Neurobiology (NEURBIO)&quot;,&quot;value&quot;:&quot;NEURBIO&quot;},{&quot;label&quot;:&quot;Neuroscience (Graduate) (NEURO)&quot;,&quot;value&quot;:&quot;NEURO&quot;},{&quot;label&quot;:&quot;Neuroscience (NEUROSC)&quot;,&quot;value&quot;:&quot;NEUROSC&quot;},{&quot;label&quot;:&quot;Nursing&quot;,&quot;value&quot;:&quot;NURSING&quot;},{&quot;label&quot;:&quot;Obstetrics and Gynecology (OBGYN)&quot;,&quot;value&quot;:&quot;OBGYN&quot;},{&quot;label&quot;:&quot;Oral Biology (ORL BIO)&quot;,&quot;value&quot;:&quot;ORL BIO&quot;},{&quot;label&quot;:&quot;Pathology and Laboratory Medicine (PATH)&quot;,&quot;value&quot;:&quot;PATH&quot;},{&quot;label&quot;:&quot;Philosophy (PHILOS)&quot;,&quot;value&quot;:&quot;PHILOS&quot;},{&quot;label&quot;:&quot;Physics&quot;,&quot;value&quot;:&quot;PHYSICS&quot;},{&quot;label&quot;:&quot;Physics and Biology in Medicine (PBMED)&quot;,&quot;value&quot;:&quot;PBMED&quot;},{&quot;label&quot;:&quot;Physiological Science (PHYSCI)&quot;,&quot;value&quot;:&quot;PHYSCI&quot;},{&quot;label&quot;:&quot;Physiology (PHYSIOL)&quot;,&quot;value&quot;:&quot;PHYSIOL&quot;},{&quot;label&quot;:&quot;Polish (POLSH)&quot;,&quot;value&quot;:&quot;POLSH&quot;},{&quot;label&quot;:&quot;Political Science (POL SCI)&quot;,&quot;value&quot;:&quot;POL SCI&quot;},{&quot;label&quot;:&quot;Portuguese (PORTGSE)&quot;,&quot;value&quot;:&quot;PORTGSE&quot;},{&quot;label&quot;:&quot;Program in Computing (COMPTNG)&quot;,&quot;value&quot;:&quot;COMPTNG&quot;},{&quot;label&quot;:&quot;Psychiatry and Biobehavioral Sciences (PSYCTRY)&quot;,&quot;value&quot;:&quot;PSYCTRY&quot;},{&quot;label&quot;:&quot;Psychology (PSYCH)&quot;,&quot;value&quot;:&quot;PSYCH&quot;},{&quot;label&quot;:&quot;Public Health (PUB HLT)&quot;,&quot;value&quot;:&quot;PUB HLT&quot;},{&quot;label&quot;:&quot;Public Policy (PUB PLC)&quot;,&quot;value&quot;:&quot;PUB PLC&quot;},{&quot;label&quot;:&quot;Religion, Study of (RELIGN)&quot;,&quot;value&quot;:&quot;RELIGN&quot;},{&quot;label&quot;:&quot;Romanian (ROMANIA)&quot;,&quot;value&quot;:&quot;ROMANIA&quot;},{&quot;label&quot;:&quot;Russian (RUSSN)&quot;,&quot;value&quot;:&quot;RUSSN&quot;},{&quot;label&quot;:&quot;Scandinavian (SCAND)&quot;,&quot;value&quot;:&quot;SCAND&quot;},{&quot;label&quot;:&quot;Science Education (SCI EDU)&quot;,&quot;value&quot;:&quot;SCI EDU&quot;},{&quot;label&quot;:&quot;Semitic&quot;,&quot;value&quot;:&quot;SEMITIC&quot;},{&quot;label&quot;:&quot;Serbian/Croatian (SRB CRO)&quot;,&quot;value&quot;:&quot;SRB CRO&quot;},{&quot;label&quot;:&quot;Slavic (SLAVC)&quot;,&quot;value&quot;:&quot;SLAVC&quot;},{&quot;label&quot;:&quot;Social Thought (SOC THT)&quot;,&quot;value&quot;:&quot;SOC THT&quot;},{&quot;label&quot;:&quot;Social Welfare (SOC WLF)&quot;,&quot;value&quot;:&quot;SOC WLF&quot;},{&quot;label&quot;:&quot;Society and Genetics (SOC GEN)&quot;,&quot;value&quot;:&quot;SOC GEN&quot;},{&quot;label&quot;:&quot;Sociology (SOCIOL)&quot;,&quot;value&quot;:&quot;SOCIOL&quot;},{&quot;label&quot;:&quot;South Asian (S ASIAN)&quot;,&quot;value&quot;:&quot;S ASIAN&quot;},{&quot;label&quot;:&quot;Southeast Asian (SEASIAN)&quot;,&quot;value&quot;:&quot;SEASIAN&quot;},{&quot;label&quot;:&quot;Spanish (SPAN)&quot;,&quot;value&quot;:&quot;SPAN&quot;},{&quot;label&quot;:&quot;Statistics (STATS)&quot;,&quot;value&quot;:&quot;STATS&quot;},{&quot;label&quot;:&quot;Surgery&quot;,&quot;value&quot;:&quot;SURGERY&quot;},{&quot;label&quot;:&quot;Swahili&quot;,&quot;value&quot;:&quot;SWAHILI&quot;},{&quot;label&quot;:&quot;Thai&quot;,&quot;value&quot;:&quot;THAI&quot;},{&quot;label&quot;:&quot;Theater&quot;,&quot;value&quot;:&quot;THEATER&quot;},{&quot;label&quot;:&quot;Turkic Languages (TURKIC)&quot;,&quot;value&quot;:&quot;TURKIC&quot;},{&quot;label&quot;:&quot;University Studies (UNIV ST)&quot;,&quot;value&quot;:&quot;UNIV ST&quot;},{&quot;label&quot;:&quot;Urban Planning (URBN PL)&quot;,&quot;value&quot;:&quot;URBN PL&quot;},{&quot;label&quot;:&quot;Vietnamese (VIETMSE)&quot;,&quot;value&quot;:&quot;VIETMSE&quot;},{&quot;label&quot;:&quot;World Arts and Cultures (WL ARTS)&quot;,&quot;value&quot;:&quot;WL ARTS&quot;},{&quot;label&quot;:&quot;Yiddish (YIDDSH)&quot;,&quot;value&quot;:&quot;YIDDSH&quot;}]';
+        subjects = subjects.replace(/&quot;/g, '"');
+        GlobalFunctions.CreateAutocomplete('select_filter_subject', $.parseJSON(subjects.replace(/&amp;/g, '&')), 'Enter Subject Area (Required)', '_Select_Subject');        
+    });
+</script>
+</div>
+</div>
+<div id="search_by_info_message">
+<div class="row">
+<div id="search_by_info_question"><a href="javascript:void(0)">What is a Subject Area?</a></div>
+</div>
+<div class="row">
+<div class="message light hideOrShow" id="search_by_info_answer">
+<p>A Subject Area defines an overall area of study. All subject areas are listed alphabetically, and only subject areas with courses offered in the selected term will display. A list of all active subject areas is available on the <a href="http://registrar.ucla.edu/Academics/Course-Descriptions">Course Descriptions</a> page.</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+    AdjustGoButton();
+</script>
+</div>
+<button class="button hidden-phone" id="btn_filters">Filter Results</button>
+<div class="hideOrShow" id="filter-body">
+<div class="showHideFilters hidden sheader">
+<a href="javascript:void(0)">
+<div id="div_search_expander">
+<span alt="Collapse search" class="search_img icon-plus-sign" id="showHideFilterImage"></span>
+</div>
+<div id="showHideFilterHeader">
+            Show Filters
+        </div>
+</a>
+</div>
+<div id="narrow_by">
+<p class="fltr-section-title">
+        Narrow By:
+    </p>
+<div class="div_filter" id="Status">
+<div class="fltrrow" id="Status_filterHeader">
+<a href="javascript:void(0)" id="Status_toggle">
+<div class="fltrrow_expand_text"><p>Status</p></div>
+</a>
+</div>
+<div id="Status_filterContainer">
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="O"/>Open                            </label>
+</div>
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="W"/>Waitlisted                            </label>
+</div>
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="C"/>Closed                            </label>
+</div>
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="X"/>Cancelled                            </label>
+</div>
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="T"/>Tentative                            </label>
+</div>
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="S"/>Not available                            </label>
+</div>
+</div>
+</div>
+<div class="div_filter" id="MeetingDay">
+<div class="fltrrow" id="MeetingDay_filterHeader">
+<a href="javascript:void(0)" id="MeetingDay_toggle">
+<div class="fltrrow_expand_text"><p>Meeting Day</p></div>
+</a>
+</div>
+<div id="MeetingDay_filterContainer">
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="M"/>Monday                            </label>
+</div>
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="T"/>Tuesday                            </label>
+</div>
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="W"/>Wednesday                            </label>
+</div>
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="R"/>Thursday                            </label>
+</div>
+<div class="row-fluid">
+<label>
+<input checked="checked" class="filter-results" type="checkbox" value="F"/>Friday                            </label>
+</div>
+</div>
+</div>
+<div class="div_filter" id="MeetingTime">
+<div class="fltrrow" id="MeetingTime_filterHeader">
+<a href="javascript:void(0)" id="MeetingTime_toggle">
+<div class="fltrrow_expand_text"><p>Meeting Time</p></div>
+</a>
+</div>
+<div id="MeetingTime_filterContainer">
+<div id="slider-dropdowns">
+<ul>
+<li><span class="time-select-label-span">Start Time</span>
+<select class="filter-results" id="MeetingTime_start_options">
+<option )="" selected="selected" value="8:00 am">8:00 am</option>
+<option )="" value="9:00 am">9:00 am</option>
+<option )="" value="10:00 am">10:00 am</option>
+<option )="" value="11:00 am">11:00 am</option>
+<option )="" value="12:00 pm">12:00 pm</option>
+<option )="" value="1:00 pm">1:00 pm</option>
+<option )="" value="2:00 pm">2:00 pm</option>
+<option )="" value="3:00 pm">3:00 pm</option>
+<option )="" value="4:00 pm">4:00 pm</option>
+<option )="" value="5:00 pm">5:00 pm</option>
+<option )="" value="6:00 pm">6:00 pm</option>
+<option )="" value="7:00 pm">7:00 pm</option>
+<option )="" value="8:00 pm">8:00 pm</option>
+</select>
+</li>
+<li><span class="time-select-label-span">End Time</span>
+<select class="filter-results" id="MeetingTime_end_options">
+<option )="" value="8:00 am">8:00 am</option>
+<option )="" value="9:00 am">9:00 am</option>
+<option )="" value="10:00 am">10:00 am</option>
+<option )="" value="11:00 am">11:00 am</option>
+<option )="" value="12:00 pm">12:00 pm</option>
+<option )="" value="1:00 pm">1:00 pm</option>
+<option )="" value="2:00 pm">2:00 pm</option>
+<option )="" value="3:00 pm">3:00 pm</option>
+<option )="" value="4:00 pm">4:00 pm</option>
+<option )="" value="5:00 pm">5:00 pm</option>
+<option )="" value="6:00 pm">6:00 pm</option>
+<option )="" value="7:00 pm">7:00 pm</option>
+<option )="" selected="selected" value="8:00 pm">8:00 pm</option>
+</select>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="div_filter" id="Location">
+<div class="fltrrow" id="Location_filterHeader">
+<a href="javascript:void(0)" id="Location_toggle">
+<div class="fltrrow_expand_text"><p>Location</p></div>
+</a>
+</div>
+<div id="Location_filterContainer">
+<select class="filter-results" id="Location_options">
+<option selected="selected" value="noop">Choose a Location</option>
+<option value="BOELTER ">Boelter Hall</option>
+<option value="BOTANY  ">Botany Building</option>
+<option value="BROAD   ">Broad Art Center</option>
+<option value="BUNCHE  ">Bunche Hall</option>
+<option value="DODD    ">Dodd Hall</option>
+<option value="FRANZ   ">Franz Hall</option>
+<option value="GEOLOGY ">Geology Building</option>
+<option value="HAINES  ">Haines Hall</option>
+<option value="HUMANTS ">Humanities Building</option>
+<option value="KNSY PV ">Kinsey Science Teaching Pavilion</option>
+<option value="LAKRETZ ">La Kretz Hall</option>
+<option value="MS      ">Mathematical Sciences</option>
+<option value="MOORE   ">Moore Hall</option>
+<option value="PAB     ">Physics and Astronomy Building</option>
+<option value="POWELL  ">Powell Library Building</option>
+<option value="PUB AFF ">Public Affairs Building</option>
+<option value="ROLFE   ">Rolfe Hall</option>
+<option value="ROYCE   ">Royce Hall</option>
+<option value="WGYOUNG ">Young Hall</option>
+</select>
+</div>
+</div>
+<div class="div_filter" id="Units">
+<div class="fltrrow" id="Units_filterHeader">
+<a href="javascript:void(0)" id="Units_toggle">
+<div class="fltrrow_expand_text"><p>Units</p></div>
+</a>
+</div>
+<div id="Units_filterContainer">
+<select class="filter-results" id="Units_options">
+<option selected="selected" value="noop">All</option>
+<option value="1.0">1.0</option>
+<option value="1.0-4.0 Variable">1.0-4.0 Variable</option>
+<option value="2.0">2.0</option>
+<option value="4.0">4.0</option>
+<option value="5.0">5.0</option>
+</select>
+</div>
+</div>
+<div class="div_filter" id="Instructor">
+<div class="fltrrow" id="Instructor_filterHeader">
+<a href="javascript:void(0)" id="Instructor_toggle">
+<div class="fltrrow_expand_text"><p>Instructor</p></div>
+</a>
+</div>
+<div id="Instructor_filterContainer">
+<select class="filter-results" id="Instructor_options">
+<option selected="selected" value="noop">Choose an Instructor</option>
+<option value="ANDERSEN, N.R.">Andersen, N.R.</option>
+<option value="ANDERSON, C.R.">Anderson, C.R.</option>
+<option value="ANDREWS, M.J.">Andrews, M.J.</option>
+<option value="ANGELOPOULOS, I.">Angelopoulos, I.</option>
+<option value="ARNOLD, D.J.">Arnold, D.J.</option>
+<option value="ASCHENBRENNER, M.J">Aschenbrenner, M....</option>
+<option value="AUSTIN, A.D.">Austin, A.D.</option>
+<option value="AUSTIN, T.D.">Austin, T.D.</option>
+<option value="BALMER, P.">Balmer, P.</option>
+<option value="BEN NERIA, O.">Ben Neria, O.</option>
+<option value="BERTOZZI, A.">Bertozzi, A.</option>
+<option value="BHASKHAR, N.">Bhaskhar, N.</option>
+<option value="BISKUP, M.">Biskup, M.</option>
+<option value="BLASIUS, D.M.">Blasius, D.M.</option>
+<option value="BOEDIHARDJO, M.T.">Boedihardjo, M.T.</option>
+<option value="BONK, M.">Bonk, M.</option>
+<option value="BRIZOLIS, D.">Brizolis, D.</option>
+<option value="BROWN, R.F.">Brown, R.F.</option>
+<option value="CAINE, G.J.">Caine, G.J.</option>
+<option value="CHERNIKOV, A.">Chernikov, A.</option>
+<option value="CHONG-KIT, R.A.">Chong-Kit, R.A.</option>
+<option value="CHOW, Y.T.">Chow, Y.T.</option>
+<option value="CONLEY, W.J.">Conley, W.J.</option>
+<option value="DALLAS, H.J.">Dallas, H.J.</option>
+<option value="DAS, O.">Das, O.</option>
+<option value="ELMAN, R.S.">Elman, R.S.</option>
+<option value="GALLAUER ALVES DE">Gallauer Alves de</option>
+<option value="GANGBO, W.D.">Gangbo, W.D.</option>
+<option value="GAO, H.">Gao, H.</option>
+<option value="GARNETT, J.B.">Garnett, J.B.</option>
+<option value="GIESEKER, D.">Gieseker, D.</option>
+<option value="GREENE, M.P.">Greene, M.P.</option>
+<option value="GREENE, R.E.">Greene, R.E.</option>
+<option value="HASSON, T.W.">Hasson, T.W.</option>
+<option value="HEILMAN, S.M.">Heilman, S.M.</option>
+<option value="HEMPEL, N.">Hempel, N.</option>
+<option value="HIDA, H.">Hida, H.</option>
+<option value="HILL, M.A.">Hill, M.A.</option>
+<option value="HOFF, D.J.">Hoff, D.J.</option>
+<option value="HONDA, K.">Honda, K.</option>
+<option value="JUNG, C.">Jung, C.</option>
+<option value="KERANEN, J.P.">Keranen, J.P.</option>
+<option value="KHARE, C.">Khare, C.</option>
+<option value="KHITRIK, M.">Khitrik, M.</option>
+<option value="KILLIP, R.B.">Killip, R.B.</option>
+<option value="KIM, C.">Kim, C.</option>
+<option value="LI, W.">Li, W.</option>
+<option value="LIU, G.">Liu, G.</option>
+<option value="LIU, K.">Liu, K.</option>
+<option value="LOW, N.C.">Low, N.C.</option>
+<option value="MANION, A.J.">Manion, A.J.</option>
+<option value="MANOLESCU, C.">Manolescu, C.</option>
+<option value="MARKS, A.S.">Marks, A.S.</option>
+<option value="MERKURJEV, A.S.">Merkurjev, A.S.</option>
+<option value="MESZAROS, A.R.">Meszaros, A.R.</option>
+<option value="MOU, C.">Mou, C.</option>
+<option value="NEEMAN, I.">Neeman, I.</option>
+<option value="OSTROVSKY, R.">Ostrovsky, R.</option>
+<option value="OU, W.">Ou, W.</option>
+<option value="PAK, I.">Pak, I.</option>
+<option value="PETERSEN, P.">Petersen, P.</option>
+<option value="POPA, S.">Popa, S.</option>
+<option value="PORTER, M.A.">Porter, M.A.</option>
+<option value="RADKO, O.V.">Radko, O.V.</option>
+<option value="RODRIGUEZ, P.F.">Rodriguez, P.F.</option>
+<option value="ROUQUIER, R.A.">Rouquier, R.A.</option>
+<option value="ROYER, A.M.">Royer, A.M.</option>
+<option value="SARKAR, S.">Sarkar, S.</option>
+<option value="SHARIFI, R.T.">Sharifi, R.T.</option>
+<option value="SHLYAKHTENKO, D.Y.">Shlyakhtenko, D.Y...</option>
+<option value="SON, S.K.">Son, S.K.</option>
+<option value="TA">TA</option>
+<option value="TAO, T.C.">Tao, T.C.</option>
+<option value="TAYLOR, D.W.">Taylor, D.W.</option>
+<option value="TERAN, J.M.">Teran, J.M.</option>
+<option value="THE STAFF">The Staff</option>
+<option value="TOTARO, B.">Totaro, B.</option>
+<option value="TURANOVA, O.">Turanova, O.</option>
+<option value="VESE, L.A.">Vese, L.A.</option>
+<option value="VISAN, M.">Visan, M.</option>
+<option value="WHITE, N.A.">White, N.A.</option>
+<option value="YELIUSSIZOV, D.">Yeliussizov, D.</option>
+<option value="YIN, P.">Yin, P.</option>
+<option value="YIN, W.">Yin, W.</option>
+</select>
+</div>
+</div>
+<div class="div_filter" id="Level">
+<div class="fltrrow" id="Level_filterHeader">
+<a href="javascript:void(0)" id="Level_toggle">
+<div class="fltrrow_expand_text"><p>Level</p></div>
+</a>
+</div>
+<div id="Level_filterContainer">
+<select class="filter-results" id="Level_options">
+<option selected="selected" value="noop">All</option>
+<option value="l">Lower Division</option>
+<option value="u">Upper Division</option>
+<option value="G">Graduate</option>
+</select>
+</div>
+</div>
+<div class="div_filter" id="Impacted">
+<div class="fltrrow" id="Impacted_filterHeader">
+<a href="javascript:void(0)" id="Impacted_toggle">
+<div class="fltrrow_expand_text"><p>Impacted</p></div>
+</a>
+</div>
+<div id="Impacted_filterContainer">
+<span class="singleFilterOption">No</span>
+<input type="hidden" value="N"/>
+</div>
+</div>
+<div class="div_filter" id="EnrollmentRestrictions">
+<div class="fltrrow" id="EnrollmentRestrictions_filterHeader">
+<a href="javascript:void(0)" id="EnrollmentRestrictions_toggle">
+<div class="fltrrow_expand_text"><p>Enrollment Restrictions</p></div>
+</a>
+</div>
+<div id="EnrollmentRestrictions_filterContainer">
+<select class="filter-results" id="EnrollmentRestrictions_options">
+<option selected="selected" value="noop">--Choose--</option>
+<option value="n">No</option>
+<option value="y">Yes</option>
+</select>
+</div>
+</div>
+<div class="div_filter" id="EnforcedRequisites">
+<div class="fltrrow" id="EnforcedRequisites_filterHeader">
+<a href="javascript:void(0)" id="EnforcedRequisites_toggle">
+<div class="fltrrow_expand_text"><p>Enforced Requisites</p></div>
+</a>
+</div>
+<div id="EnforcedRequisites_filterContainer">
+<select class="filter-results" id="EnforcedRequisites_options">
+<option selected="selected" value="noop">--Choose--</option>
+<option value="n">No</option>
+<option value="y">Yes</option>
+</select>
+</div>
+</div>
+<div class="div_filter" id="IndividualStudies">
+<div class="fltrrow" id="IndividualStudies_filterHeader">
+<a href="javascript:void(0)" id="IndividualStudies_toggle">
+<div class="fltrrow_expand_text"><p>Individual Studies</p></div>
+</a>
+</div>
+<div id="IndividualStudies_filterContainer">
+<span class="singleFilterOption">None</span>
+<input type="hidden" value="n"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<script src="/ro/bundles/registrar/searchEnrollmentjs?v=lgWdtnw_av9KdDZw8ZRYVsTCrMyWxggSvq014mmtvP41"></script>
+<input id="feature_id" name="FeatureID" type="hidden" value="203"/>
+<div class="search_results">
+<div id="divSearchResults">
+<div id="divSearchResultsHeader">
+<span id="spanSearchResultsHeader">Your results for: 2017, Fall, Mathematics (MATH)</span>
+<div id="summary-notes">
+<ul>
+<li>Information on the Mathematics Diagnostic Test is available at <a href="http://www.math.ucla.edu/ugrad/diagnostic" target="_blank">http://www.math.ucla.edu/ugrad/diagnostic <i class="icon-external-link"></i></a>.</li>
+<li>ADVANCED PLACEMENT CREDIT: For questions regarding Advanced Placement (AP) credit, see <a href="http://www.math.ucla.edu/ugrad/ap-credit" target="_blank">http://www.math.ucla.edu/ugrad/ap-credit <i class="icon-external-link"></i></a>.</li>
+</ul>
+</div>
+</div>
+<div id="divExpandandPagination">
+<div id="divExpandAll"><a href="javascript:void(0)" id="expandAll"><span alt="Expand filter" class="icon-plus-sign "></span>Expand All Classes</a></div>
+<div class="divPaginationWrapper">
+<div id="divPagination">
+<div class="demo">
+<div class="demo1">
+</div>
+</div>
+<input id="pageCount" name="pageCount" type="hidden" value="4"/>
+<script>
+    var pageCount = parseInt('4');            
+    if (pageCount > 1) 
+    {
+        $(".demo1").paginate({
+             count: pageCount,
+            start: 1,
+            display: 10,
+            mouse: 'press'
+            }
+        );
+     }
+</script>
+</div>
+</div>
+</div>
+<div id="divClassNames">
+<div class="results">
+<div id="resultsTitle">
+<div class="row-fluid class-title" id="MATH0001">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0001-title">1 - Precalculus</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0001",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0001    ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0001","MultiListedClassFlag":"n","Token":"MDAwMSAgICBNQVRIMDAwMQ=="});
+            </script>
+<div class="row-fluid class-title" id="MATH0003A">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0003A-title">3A - Calculus for Life Sciences Students</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0003A",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0003A   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0003A","MultiListedClassFlag":"n","Token":"MDAwM0EgICBNQVRIMDAwM0E="});
+            </script>
+<div class="row-fluid class-title" id="MATH0003B">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0003B-title">3B - Calculus for Life Sciences Students</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0003B",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0003B   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0003B","MultiListedClassFlag":"n","Token":"MDAwM0IgICBNQVRIMDAwM0I="});
+            </script>
+<div class="row-fluid class-title" id="MATH0003C">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0003C-title">3C - Ordinary Differential Equations with Linear Algebra for Life Sciences Students</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0003C",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0003C   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0003C","MultiListedClassFlag":"n","Token":"MDAwM0MgICBNQVRIMDAwM0M="});
+            </script>
+<div class="row-fluid class-title" id="MATH0019001">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0019001-title">19 - Patterns and Symmetry in Art and Nature</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0019001",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0019    ","IsRoot":true,"SessionGroup":"%","ClassNumber":" 001  ","SequenceNumber":null,"Path":"MATH0019001","MultiListedClassFlag":"n","Token":"MDAxOSAgICBNQVRIMDAxOTAwMQ=="});
+            </script>
+<div class="row-fluid class-title" id="MATH0031A">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0031A-title">31A - Differential and Integral Calculus</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0031A",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0031A   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0031A","MultiListedClassFlag":"n","Token":"MDAzMUEgICBNQVRIMDAzMUE="});
+            </script>
+<div class="row-fluid class-title" id="MATH0031AL">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0031AL-title">31AL - Differential and Integral Calculus Laboratory</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0031AL",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0031AL  ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0031AL","MultiListedClassFlag":"n","Token":"MDAzMUFMICBNQVRIMDAzMUFM"});
+            </script>
+<div class="row-fluid class-title" id="MATH0031B">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0031B-title">31B - Integration and Infinite Series</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0031B",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0031B   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0031B","MultiListedClassFlag":"n","Token":"MDAzMUIgICBNQVRIMDAzMUI="});
+            </script>
+<div class="row-fluid class-title" id="MATH0032A">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0032A-title">32A - Calculus of Several Variables</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0032A",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0032A   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0032A","MultiListedClassFlag":"n","Token":"MDAzMkEgICBNQVRIMDAzMkE="});
+            </script>
+<div class="row-fluid class-title" id="MATH0032AH">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0032AH-title">32AH - Calculus of Several Variables (Honors)</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0032AH",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0032AH  ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0032AH","MultiListedClassFlag":"n","Token":"MDAzMkFIICBNQVRIMDAzMkFI"});
+            </script>
+<div class="row-fluid class-title" id="MATH0032B">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0032B-title">32B - Calculus of Several Variables</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0032B",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0032B   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0032B","MultiListedClassFlag":"n","Token":"MDAzMkIgICBNQVRIMDAzMkI="});
+            </script>
+<div class="row-fluid class-title" id="MATH0033A">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0033A-title">33A - Linear Algebra and Applications</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0033A",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0033A   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0033A","MultiListedClassFlag":"n","Token":"MDAzM0EgICBNQVRIMDAzM0E="});
+            </script>
+<div class="row-fluid class-title" id="MATH0033B">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0033B-title">33B - Differential Equations</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0033B",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0033B   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0033B","MultiListedClassFlag":"n","Token":"MDAzM0IgICBNQVRIMDAzM0I="});
+            </script>
+<div class="row-fluid class-title" id="MATH0061">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0061-title">61 - Introduction to Discrete Structures</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0061",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0061    ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0061","MultiListedClassFlag":"n","Token":"MDA2MSAgICBNQVRIMDA2MQ=="});
+            </script>
+<div class="row-fluid class-title" id="MATH0072SL">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0072SL-title">72SL - Classroom Practices in Middle School Mathematics</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0072SL",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0072SL  ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0072SL","MultiListedClassFlag":"n","Token":"MDA3MlNMICBNQVRIMDA3MlNM"});
+            </script>
+<div class="row-fluid class-title" id="MATH0098XA">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0098XA-title">98XA - PEERS Collaborative Learning Workshops for Life Sciences Majors</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0098XA",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0098XA  ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0098XA","MultiListedClassFlag":"n","Token":"MDA5OFhBICBNQVRIMDA5OFhB"});
+            </script>
+<div class="row-fluid class-title" id="MATH0098XB">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0098XB-title">98XB - PEERS Collaborative Learning Workshops for Physical Sciences and Engineering Majors</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0098XB",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0098XB  ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0098XB","MultiListedClassFlag":"n","Token":"MDA5OFhCICBNQVRIMDA5OFhC"});
+            </script>
+<div class="row-fluid class-title" id="MATH0100">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0100-title">100 - Problem Solving</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0100",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0100    ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0100","MultiListedClassFlag":"n","Token":"MDEwMCAgICBNQVRIMDEwMA=="});
+            </script>
+<div class="row-fluid class-title" id="MATH0101">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0101-title">101 - Advanced Problem Solving</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0101",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0101    ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0101","MultiListedClassFlag":"n","Token":"MDEwMSAgICBNQVRIMDEwMQ=="});
+            </script>
+<div class="row-fluid class-title" id="MATH0105A">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0105A-title">105A - Mathematics and Pedagogy for Teaching Secondary School Mathematics</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0105A",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0105A   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0105A","MultiListedClassFlag":"n","Token":"MDEwNUEgICBNQVRIMDEwNUE="});
+            </script>
+<div class="row-fluid class-title" id="MATH0110A">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0110A-title">110A - Algebra</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0110A",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0110A   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0110A","MultiListedClassFlag":"n","Token":"MDExMEEgICBNQVRIMDExMEE="});
+            </script>
+<div class="row-fluid class-title" id="MATH0110AH">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0110AH-title">110AH - Algebra (Honors)</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0110AH",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0110AH  ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0110AH","MultiListedClassFlag":"n","Token":"MDExMEFIICBNQVRIMDExMEFI"});
+            </script>
+<div class="row-fluid class-title" id="MATH0115A">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0115A-title">115A - Linear Algebra</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0115A",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0115A   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0115A","MultiListedClassFlag":"n","Token":"MDExNUEgICBNQVRIMDExNUE="});
+            </script>
+<div class="row-fluid class-title" id="MATH0115AH">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0115AH-title">115AH - Linear Algebra (Honors)</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0115AH",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0115AH  ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0115AH","MultiListedClassFlag":"n","Token":"MDExNUFIICBNQVRIMDExNUFI"});
+            </script>
+<div class="row-fluid class-title" id="MATH0120A">
+<h3 class="head"><a href="javascript:void(0)" id="MATH0120A-title">120A - Differential Geometry</a></h3>
+</div>
+<script type="text/javascript">
+                Iwe_ClassSearch_SearchResults.AddToCourseData("MATH0120A",{"Term":"17F","SubjectAreaCode":"MATH   ","CatalogNumber":"0120A   ","IsRoot":true,"SessionGroup":"%","ClassNumber":"%","SequenceNumber":null,"Path":"MATH0120A","MultiListedClassFlag":"n","Token":"MDEyMEEgICBNQVRIMDEyMEE="});
+            </script>
+</div>
+</div>
+</div>
+<div id="divPaginationBottom">
+<div class="divPaginationWrapper">
+<div id="divPagBottom">
+<div class="demo">
+<div class="demo1">
+</div>
+</div>
+<input id="pageCount" name="pageCount" type="hidden" value="4"/>
+<script>
+    var pageCount = parseInt('4');            
+    if (pageCount > 1) 
+    {
+        $(".demo1").paginate({
+             count: pageCount,
+            start: 1,
+            display: 10,
+            mouse: 'press'
+            }
+        );
+     }
+</script>
+</div>
+</div>
+</div>
+<script>
+    SearchPanel.HeaderText = 'Your results for: 2017, Fall, Mathematics (MATH)';
+
+    $(document).ready(function () {
+        //attach the expandAll
+        $("#expandAll").click(Iwe_ClassSearch_SearchResults.ExpandAll);
+    });
+
+</script>
+</div>
+</div>
+<script type="text/javascript">
+    SearchPanel.SearchData = JSON.stringify({"subj_area_cd":"MATH","search_by":"Subject","term_cd":"17F","SubjectAreaName":"Mathematics (MATH)","CrsCatlgName":"Enter a Catalog Number or Class Title (Optional)","ActiveEnrollmentFlag":"n","HasData":"True"});
+    SearchPanel.SearchBy = "subject";
+    currentActiveTerm = '17F';
+    if ($('#btn_enrollmentAction_Enable').length != 0) {
+        $('#btn_enrollmentAction_Enable').attr("disabled", "disabled");
+    }
+</script>
+</div>
+</div>
+</div>
+</div>
+<!--Footer-->
+<div class="global-footer" id="global-footer">
+<div class="container">
+<div id="bottom-menu">
+<ul class="nav">
+<li><a href="http://www.registrar.ucla.edu/About-the-Registrars-Office">About</a></li>
+<li><a href="http://www.registrar.ucla.edu/Contacts-Location-Hours">Contacts/Hours</a></li>
+<li><a href="http://my.ucla.edu" target="_blank">MyUCLA</a></li>
+<li><a href="http://www.studentaffairs.ucla.edu/" target="_blank">Student Affairs</a></li>
+<li><a href="http://www.ucla.edu" target="_blank">UCLA.edu</a></li>
+<li style="float:right;"><a href="http://www.registrar.ucla.edu/Voter-Information">Register to Vote</a></li>
+</ul>
+</div>
+</div>
+</div>
+<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script type="text/javascript">
+        ApplicationSettings.init(PageConfig.AppRoot);
+    </script>
+<script src="/ro/bundles/jspopover?v=Nrx_Cn4rF92aryETxJrW9wFWCHWVEbfIYvLDTjy4c341"></script>
+<script src="/ro/bundles/registrar/socjs?v=iqwdlQu7UWZbxnBl9reWVkjJY7z6QcYM2XDjGgSfGv01"></script>
+</body>
+</html>
