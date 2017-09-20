@@ -38,9 +38,123 @@ import pandas as pd
 def get_class_info_detailed(URL):
     soup = get_web_page(URL)
     text = str(soup.find_all('p')) #find all tags
-    info = []
+    info = dict()
+    loc1 = 0
+    loc2 = 0
+
+    loc1 = text.find("    ")+5
+    loc2 = text.find(" ", loc1)
+    info["subject"] = text[loc1:loc2]
+
+    loc1 = loc2 + 4
+    loc2 = text.find(" ", loc1)
+    info["course_number"] = text[loc1:loc2] 
+
+    loc1 = text.find(" - ", loc2) + 3
+    loc2 = text.find("</p>", loc1)
+    info["course_title"] = text[loc1: loc2]
+
+    loc1 = text.find("<a href=", loc2) + 9
+    loc2 = text.find(">", loc1)
+    info["courser_website"] = text[loc1: loc2]
+
+    loc1 = text.find("Instructor(s)", loc2) + 26
+    loc2 = text.find("</", loc1)
+    info["status"] = text[loc1: loc2]
     
-    print text
+    loc1 = text.find("<p>", loc2) + 3
+    loc2 = text.find("</", loc1)
+    info["waitlist_status"] = text[loc1: loc2]
+
+    loc1 = text.find("data-content", loc2) + 14
+    loc2 = text.find("\" ", loc1)
+    info["days"] = text[loc1: loc2]
+
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    info["time"] = text[loc1: loc2]
+
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    info["location"] = text[loc1: loc2]
+
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    info["units"] = text[loc1: loc2]
+
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    info["Instructor"] = text[loc1: loc2]
+
+    loc1 = text.find("(s)</p>, <p>", loc2) + 12
+    loc2 = text.find("</p>", loc1)
+    info["final_date"] = text[loc1: loc2]
+    
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    info["final_weekday"] = text[loc1: loc2]
+
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    info["final_time"] = text[loc1: loc2]
+    
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    if text[loc1] == "C":
+        info["final_location"] = None
+    else:
+        info["final_location"] = text[loc1 : loc2]
+
+    loc1 = text.find("Level</p>, <p>", loc2) + 14
+    loc2 = text.find("</p>", loc1)
+    info["grade_type"] = text[loc1: loc2]
+
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    info["restriction"] = text[loc1: loc2]
+
+    
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    info["impacted"] = text[loc1: loc2]
+
+
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    info["individual_studies"] = text[loc1: loc2]
+
+    
+    loc1 = text.find(", <p>", loc2) + 5
+    loc2 = text.find("</p>", loc1)
+    info["level"] = text[loc1: loc2]
+
+    #TODO: Prerequisites
+
+    
+    loc1 = text.find("breakLongText\">", loc2) + 15
+    loc2 = text.find("</p>", loc1)
+    info["course_description"] = text[loc1: loc2]
+
+    loc1 = text.find("breakLongText\">", loc2) + 15
+    loc2 = text.find("</p>", loc1)
+    info["class_description"] = text[loc1: loc2]
+
+    
+    loc1 = text.find("breakLongText\">", loc2) + 15
+    loc2 = text.find("</p>", loc1)
+    info["GE"] = text[loc1: loc2]
+
+    
+    loc1 = text.find("breakLongText\">", loc2) + 15
+    loc2 = text.find("</p>", loc1)
+    info["writing_II"] = text[loc1: loc2]
+
+    loc1 = text.find("breakLongText\">", loc2) + 15
+    loc2 = text.find("</p>", loc1)
+    info["diveristy"] = text[loc1: loc2]
+
+    #TODO? class notes
+    return info
     
 def main():
     #URL = get_class_info_basic("262660200")
