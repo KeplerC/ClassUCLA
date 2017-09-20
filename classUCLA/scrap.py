@@ -34,7 +34,6 @@ def get_class_info_basic(index):
 '''
 
 #extract features
-import pandas as pd
 def get_class_info_detailed(URL):
     soup = get_web_page(URL)
     text = str(soup.find_all('p')) #find all tags
@@ -155,11 +154,28 @@ def get_class_info_detailed(URL):
 
     #TODO? class notes
     return info
+
+import pandas as pd
+def create_data_frame(list):
+    df = pd.DataFrame(list)
+    return df
+
+def write_to_excel(df):
+    writer = pd.ExcelWriter('example.xlsx', engine='xlsxwriter')
+    df.to_excel('test.xlsx', 'Sheet1')
+    writer.save()
     
 def main():
-    #URL = get_class_info_basic("262660200")
-    #print URL
-    get_class_info_detailed("https://sa.ucla.edu/ro/Public/SOC/Results/ClassDetail?term_cd=17F&subj_area_cd=MATH%20%20%20&crs_catlg_no=0170A%20%20%20&class_id=262660210&class_no=%20002%20%20")
+    l = list()
+    tasks = ["262660200", "262660210", "262660220", "262660230", "262660240"]
+    for t in tasks:
+        URL = get_class_info_basic(t)
+        l.append(get_class_info_detailed(URL))
+    try:
+        df = create_data_frame(l)
+        write_to_excel(df)
+    except:
+        print("ERR")
 
 if __name__ == "__main__":
     main()
