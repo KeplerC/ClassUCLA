@@ -7,8 +7,8 @@ import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
 
-TERM = '17F'
-CLASS_ID = ['262660200', '262660210', '262344200', '186811200']
+TERM = '18W'
+CLASS_ID = ["262447200", "262576200"]
 
 def getOpenSeats(index):
     URL = 'https://sa.ucla.edu/ro/public/soc/Results?t='+TERM+'&sBy=classidnumber&id='+index+'&undefined=Go&btnIsInIndex=btn_inIndex'
@@ -46,6 +46,7 @@ def getOpenSeats(index):
                 msg1 = string[loc1: loc2]
                 msg2 = string[loc2+5: loc3]
                 ostream+=" is " + msg1
+                msg2.replace("<br/>", "with");
                 ostream+=". Its status is "+msg2+"\n"
             flag = -1
         if string.find("Lec") != -1:
