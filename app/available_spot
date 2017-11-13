@@ -43,6 +43,8 @@ def getOpenSeats(index):
                 msg1 = string[loc1: loc2]
                 msg2 = string[loc2+5: loc3]
                 ostream+=" is " + msg1
+                if(msg1 == "Closed"):
+                    return None
                 msg2 = msg2.replace("<br/>", " with ");
                 ostream+=". Its status is "+msg2+"\n"
             flag = -1
@@ -108,22 +110,36 @@ def sendEmail(content, address):
     except:
         print "failed"
 
+import time
 def send_email_to(data):
-    ostream='''Good Morning, Lu! 
-Please find class status information below
+    should_send = False
+    ostream='''Dear Lu, 
+Your Class is Available: 
 '''
     ostream+='\n'
     for ID in data["list"]:
-        ostream+=getOpenSeats(ID)
-        ostream+='\n'
+        stream = getOpenSeats(ID)
+        if(stream == None):
+            continue
+        else:
+            should_send = True
+            ostream+= stream
+            ostream+='\n'
     ostream+='''
 
 B.R.
 Kepler :)'''
-    sendEmail(ostream, data["email"])
+    if(should_send):
+        sendEmail(ostream, data["email"])
+    else:
+        print("Full")
+        log_file = open("/home/ubuntu/ClassUCLA/app/log.txt", 'a')
+        log_file.write(time.asctime(time.localtime(time.time())))
+        log_file.write("  FULL\n")
+        log_file.close()
 
 import json
 if __name__ == '__main__':
-    with open('luli.json') as data_file:
+    with open('/home/ubuntu/ClassUCLA/app/luli.json') as data_file:
         data = json.load(data_file)
         send_email_to(data)
