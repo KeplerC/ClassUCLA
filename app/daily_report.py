@@ -95,7 +95,7 @@ def sendEmail(content, address):
     message['To'] =  Header("Luli", 'utf-8')
     message['Subject'] = Header("Class Update", 'utf-8')
     try:
-        receivers = []
+        receivers = ["chenkaiyuan@ucla.edu"]
         sender = "chenkaiyuan@ucla.edu"
         receivers.append(address)
         smtpObj = smtplib.SMTP('smtp.mailgun.org', 587)
@@ -109,10 +109,10 @@ def sendEmail(content, address):
         print "failed"
 
 def send_email_to(data):
-    ostream='''Dear Lu, 
-Please find class information below
+    ostream='''Good Morning, Lu! 
+Please find class status information below
 '''
-    ostream='\n'
+    ostream+='\n'
     for ID in data["list"]:
         ostream+=getOpenSeats(ID)
         ostream+='\n'
@@ -124,6 +124,6 @@ Kepler :)'''
 
 import json
 if __name__ == '__main__':
-    with open('data.json') as data_file:
+    with open('luli.json') as data_file:
         data = json.load(data_file)
         send_email_to(data)

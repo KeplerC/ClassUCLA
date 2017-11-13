@@ -109,10 +109,10 @@ def sendEmail(content, address):
         print "failed"
 
 def send_email_to(data):
-    ostream='''Dear Lu, 
-Please find class information below
+    ostream='''Good Morning, Lu! 
+Please find class status information below
 '''
-    ostream='\n'
+    ostream+='\n'
     for ID in data["list"]:
         ostream+=getOpenSeats(ID)
         ostream+='\n'
