@@ -133,7 +133,7 @@ Kepler :)'''
         sendEmail(ostream, data["email"])
     else:
         print("Full")
-        log_file = open("/home/ubuntu/data/log.txt", 'a')
+        log_file = open("/home/ubuntu/ClassUCLA/app/log.txt", 'a')
         log_file.write(time.asctime(time.localtime(time.time())))
         log_file.write("  FULL\n")
         log_file.close()
