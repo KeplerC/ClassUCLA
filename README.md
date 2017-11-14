@@ -1,6 +1,12 @@
 # ClassUCLA
 This is a class check and enroll program for myUCLA. 
 
+in directory /app/
+
+it has all the information that you need for watching a class. All one needs to do is to edit the json file.
+
+the other file is to find detailed class information. 
+
 It can scan through all the classes' detailed information and output an excel, csv(or pd DataFrame)
 
 Now it supports

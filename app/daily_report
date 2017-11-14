@@ -94,19 +94,17 @@ def sendEmail(content, address):
     message['From'] = Header("UCLA Class Assistant", 'utf-8')
     message['To'] =  Header("Luli", 'utf-8')
     message['Subject'] = Header("Class Update", 'utf-8')
-    try:
-        receivers = ["chenkaiyuan@ucla.edu"]
-        sender = "chenkaiyuan@ucla.edu"
-        receivers.append(address)
-        smtpObj = smtplib.SMTP('smtp.mailgun.org', 587)
-        smtpObj.login(mail_user,mail_pass)
-        print receivers
-        print address
-        smtpObj.sendmail(sender, receivers, message.as_string())
-        smtpObj.quit()
-        print "success"
-    except:
-        print "failed"
+
+    receivers = ["chenkaiyuan@ucla.edu"]
+    sender = "chenkaiyuan@ucla.edu"
+    receivers.append(address)
+    smtpObj = smtplib.SMTP('smtp.mailgun.org', 587)
+    smtpObj.login(mail_user,mail_pass)
+    print receivers
+    print address
+    smtpObj.sendmail(sender, receivers, message.as_string())
+    smtpObj.quit()
+    print "success"
 
 def send_email_to(data):
     ostream='''Good Morning, Lu 
@@ -118,14 +116,12 @@ Please find class status information below
         ostream+='\n'
     ostream+='''
 
-Every once in a while you find something iridescent, and when you do, nothing will ever compare.
-
 Good Luck!
 Kepler :)'''
     sendEmail(ostream, data["email"])
 
 import json
 if __name__ == '__main__':
-    with open('/home/ubuntu/ClassUCLA/app/luli.json') as data_file:
+    with open('/home/ubuntu/ClassUCLA/app/luli_daily_report.json') as data_file:
         data = json.load(data_file)
         send_email_to(data)
