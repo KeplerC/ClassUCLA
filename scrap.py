@@ -247,7 +247,7 @@ def find_valid_course_list(begin, end, step):
     return task
 
 def main():
-    find_valid_course_list(262660200, 262670000, 10)
+    find_valid_course_list(262660000, 262660300, 10)
     
 def main1():
     l = list()
@@ -256,7 +256,7 @@ def main1():
         l.append(get_class_info_detailed(URL))
     try:
         df = create_data_frame(l)
-        #write_to_excel(df)
+        write_to_excel(df)
         print df
     except:
         print("ERR")
