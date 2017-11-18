@@ -262,4 +262,4 @@ def main1():
         print("ERR")
 
 if __name__ == "__main__":
-    main()
+    main1()

@@ -41,12 +41,16 @@ def getOpenSeats(index):
             else:
                 msg1 = string[loc1: loc2]
                 msg2 = string[loc2+5: loc3]
-                if(msg1.find("Closed") != -1):
-                    msg1 = "Closed"
-                    msg2 = "Closed By Department"
+                if(msg1.find("Closed by Dept") != -1):
+                    msg1 = "Closed by Dept"
+                    msg2 = msg2[1 : -1]
                 ostream+=" is " + msg1
                 msg2 = msg2.replace("<br/>", " with ");
                 ostream+=". Its status is "+msg2+"\n"
+                if(info["restriction"] != None):
+                    ostream += "Its current restriction is "
+                    ostream += info["restriction"].replace("<br/>", "")
+                    ostream += "\n"
             flag = -1
         if string.find("Lec") != -1:
             #print(string)
@@ -86,7 +90,6 @@ def getOpenSeats(index):
 # Get web page and build a soup
 def get_web_page(URL):    
     try:
-        print URL
         r = requests.get(URL)
     except:
         print "failure loading searching page"
@@ -113,7 +116,6 @@ def get_class_info_basic(index):
 from collections import OrderedDict
 def get_detailed_class_info(index):
     soup = get_web_page(get_class_info_basic(index))
-    print "success loading URL"
     text = str(soup.find_all('p')) #find all tags
 
     info = OrderedDict()
@@ -212,7 +214,6 @@ def get_detailed_class_info(index):
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
     info["restriction"] = isNone(text[loc1: loc2])
-
     
     loc1 = text.find(", <p>", loc2) + 5
     loc2 = text.find("</p>", loc1)
@@ -230,7 +231,6 @@ def get_detailed_class_info(index):
     info["level"] = get_class_level(type)
 
     #TODO: Prerequisites
-    
     loc1 = text.find("breakLongText\">", loc2) + 15
     loc2 = text.find("</p>", loc1)
     info["course_description"] = text[loc1: loc2]
@@ -297,11 +297,11 @@ def get_class_level(string):
         return string
 
 def isNone(string):
-    if string == "N/A":
+    if (string == "N/A" != -1):
         return None
-    elif string == "No":
+    elif (string == "No" != -1):
         return None
-    elif string.find("None"):
+    elif (string.find("None") != -1):
         return None
     elif string.find("does not") != -1:
         return None
@@ -339,7 +339,7 @@ def sendEmail(content, address):
     file1.set_payload(exc.read())
     exc.close()
     Encoders.encode_base64(file1)
-    file1.add_header('Content-Disposition','attachment;filename=anExcelFile.xlsx')
+    file1.add_header('Content-Disposition','attachment;filename=class_information.xlsx')
     message.attach(file1)
     
     receivers = ["chenkaiyuan@ucla.edu"]
@@ -355,10 +355,9 @@ def sendEmail(content, address):
 
 def send_email_to(data):
     l = list()
-    ostream='''Good Morning, lu 
-Please find class status information below
-'''
-    ostream+='\n'
+    ostream="Good Morning, "
+    ostream+=data["name"]
+    ostream+='\n\nPlease find class status information below\n\n'
     for ID in data["list"]:
         info, seats= getOpenSeats(ID)
         ostream+= seats
@@ -366,13 +365,14 @@ Please find class status information below
         ostream+='\n'
     ostream+='''
 
-Kepler :)'''
+Add Oil, 
+Kepler:)'''
     df = create_data_frame(l)
     write_to_excel(df)
     sendEmail(ostream, data["email"])
 
 import json
 if __name__ == '__main__':
-    with open('/home/ubuntu/data/kepler.json') as data_file:
+    with open('/home/ubuntu/data/luli_daily_report.json') as data_file:
         data = json.load(data_file)
         send_email_to(data)
