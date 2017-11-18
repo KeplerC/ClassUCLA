@@ -113,7 +113,7 @@ def sendEmail(content, address):
 import time
 def send_email_to(data):
     should_send = False
-    ostream='''Dear Lu, 
+    ostream='''Dear lu, 
 Your Class is Available: 
 '''
     ostream+='\n'
@@ -133,6 +133,7 @@ Kepler :)'''
         sendEmail(ostream, data["email"])
     else:
         print("Full")
+        print(time.asctime(time.localtime(time.time())))
         log_file = open("/home/ubuntu/ClassUCLA/app/log.txt", 'a')
         log_file.write(time.asctime(time.localtime(time.time())))
         log_file.write("  FULL\n")
