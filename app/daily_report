@@ -17,8 +17,7 @@ def getOpenSeats(index):
 
     #string processing    
     text = soup.find_all('p') #find all tags
-    backup = str(text)
-    info = get_detailed_class_info(backup)
+    info = get_detailed_class_info(index)
 
     #getting available seats 
     flag = -1
@@ -83,8 +82,40 @@ def getOpenSeats(index):
             ostream += string [loc2 : loc1]
     return info, ostream 
 
+
+# Get web page and build a soup
+def get_web_page(URL):    
+    try:
+        print URL
+        r = requests.get(URL)
+    except:
+        print "failure loading searching page"
+        
+    try:
+        soup = BeautifulSoup(r.text, 'html.parser')
+        return soup
+    except:
+        print "Failure Creating Soup"
+
+# get URL for detailed website
+def get_class_info_basic(index):
+    #initialize variables
+    URL = 'https://sa.ucla.edu/ro/public/soc/Results?t='+TERM+'&sBy=classidnumber&id='+index+'&undefined=Go&btnIsInIndex=btn_inIndex'
+    soup = get_web_page(URL)
+    text = str(soup.find_all('p')) #find all tags
+    loc1 = text.find("n<a href=\"") + 10
+    loc2 = text.find("20\" target=") + 2
+    string = "https://sa.ucla.edu" + text[loc1:loc2]
+    string = string.replace("amp;", "")
+    return string
+
+
 from collections import OrderedDict
-def get_detailed_class_info(text):
+def get_detailed_class_info(index):
+    soup = get_web_page(get_class_info_basic(index))
+    print "success loading URL"
+    text = str(soup.find_all('p')) #find all tags
+
     info = OrderedDict()
     loc1 = 0
     loc2 = 0
