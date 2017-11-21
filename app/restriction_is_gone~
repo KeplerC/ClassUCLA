@@ -1,4 +1,5 @@
 #! /usr/bin/python
+# For luli use only...
 
 import requests
 from bs4 import BeautifulSoup
@@ -354,24 +355,33 @@ def sendEmail(content, address):
     print "success"
 
 def send_email_to(data):
+    should_send = False
     l = list()
-    ostream="Good Morning, "
+    ostream="Hi, "
     ostream+=data["name"]
-    ostream+='\n\nPlease find class status information below\n\n'
+    ostream+='\n\nYour restriction is gone!\n\n'
     for ID in data["list"]:
         info, seats= getOpenSeats(ID)
         ostream+= seats
         l.append(info)
+        if(info["restriction"] == None):
+            should_send = True
+        else:
+            print info["restriction"]
         ostream+='\n'
     ostream+='''
-
 Kepler:)'''
     df = create_data_frame(l)
     write_to_excel(df)
-    sendEmail(ostream, data["email"])
-
+    if(should_send == True):
+        sendEmail(ostream, data["email"])
+        print ostream
+    else:
+        print "Restriction is there"
+        print time.asctime(time.localtime(time.time()))
+        
 import json
 if __name__ == '__main__':
-    with open('/home/ubuntu/data/luli_daily_report.json') as data_file:
+    with open('/home/ubuntu/data/luli_stat.json') as data_file:
         data = json.load(data_file)
         send_email_to(data)

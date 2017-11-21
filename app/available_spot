@@ -144,3 +144,6 @@ if __name__ == '__main__':
     with open('/home/ubuntu/data/luli.json') as data_file:
         data = json.load(data_file)
         send_email_to(data)
+    with open('/home/ubuntu/data/kepler.json') as data_file:
+        data = json.load(data_file)
+        send_email_to(data)
