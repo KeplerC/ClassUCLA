@@ -106,11 +106,13 @@ def get_class_info_basic(index):
     #initialize variables
     URL = 'https://sa.ucla.edu/ro/public/soc/Results?t='+TERM+'&sBy=classidnumber&id='+index+'&undefined=Go&btnIsInIndex=btn_inIndex'
     soup = get_web_page(URL)
+
     text = str(soup.find_all('p')) #find all tags
     loc1 = text.find("n<a href=\"") + 10
     loc2 = text.find("20\" target=") + 2
     string = "https://sa.ucla.edu" + text[loc1:loc2]
     string = string.replace("amp;", "")
+    print string
     return string
 
 
