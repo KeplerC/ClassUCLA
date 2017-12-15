@@ -1,0 +1,1 @@
+pip install -U wxpy -i "https://pypi.doubanio.com/simple/"

@@ -1,0 +1,11 @@
+#!/usr/bin/python
+from wxpy import *
+
+bot = Bot(console_qr=True)
+my_friend = bot.friends()
+
+@bot.register(my_friend, TEXT, except_self=False)
+def reply_my_friend(msg):
+    print(received)
+
+embed()

@@ -293,7 +293,7 @@ class Message:
         smtpObj = smtplib.SMTP('smtp.mailgun.org', 587)
         smtpObj.login(self.mail_user,self.mail_pass)
         print self.receivers
-        #smtpObj.sendmail(self.sender, self.receivers, message.as_string())
+        smtpObj.sendmail(self.sender, self.receivers, message.as_string())
         smtpObj.quit()
         print "success"
 
@@ -309,6 +309,8 @@ def send_email_to(data):
         ostream+='\n'
     ostream+='''
 
+....
+
 Kepler:)'''
     df = create_data_frame(l)
     write_to_excel(df)
@@ -321,16 +323,14 @@ if __name__ == '__main__':
     with open('/home/ubuntu/data/luli_daily_report.json') as data_file:
         data = json.load(data_file)
         send_email_to(data)
-    with open('/home/ubuntu/data/Jingyi.json') as data_file:
-        data = json.load(data_file)
-        send_email_to(data)
     with open('/home/ubuntu/data/xilai.json') as data_file:
         data = json.load(data_file)
-        send_email_to(data
+        send_email_to(data)
     with open('/home/ubuntu/data/brian.json') as data_file:
         data = json.load(data_file)
         send_email_to(data)
-
-        # with open('/home/ubuntu/data/text.json') as data_file:
+                      
+    # with open('/home/ubuntu/data/text.json') as data_file:
     #     data = json.load(data_file)
     #     send_email_to(data)
+    
