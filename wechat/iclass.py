@@ -11,12 +11,14 @@ class Class:
         self.index = index
         self.info = get_detailed_class_info(self.index)
         self.ostream = self.get_open_seats()
-    def get_open_seats(self):
+    def print_open_seats(self):
         ostream = self.info["subject"] + " " + self.info["course_number"] + " " + self.info["course_title"] + "\n"
         ostream += "The status is " + self.info["status"]
         ostream += "\nIts waitlist status is " + self.info["waitlist_status"] + "\n"
         self.ostream = ostream
         return ostream
+    def is_available(self):
+        return ("Closed" in self.info["status"])
     def get_info(self):
         return self.info
     def get_ostream(self):
@@ -253,84 +255,3 @@ def isNone(string):
         return None
     else:
         return string
-
-
-import smtplib
-from email.mime.text import MIMEText
-from email.header import Header
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEBase import MIMEBase
-from email import Encoders
-
-class Message:
-    def __init__(self, address):        
-        self.mail_host="smtp.mailgun.org"
-        self.mail_user="postmaster@sandbox771d908665d24655b9cd402f4ece3dc8.mailgun.org"   
-        self.mail_pass="bfce1771c370570883fd229be0f3638a"
-        self.text = ""
-        self.receivers = ["chenkaiyuan@ucla.edu"]
-        self.receivers.append(address)
-        self.sender = "chenkaiyuan@ucla.edu"
-    def add_receiver(self, address):
-        self.receivers.append(address)
-    def set_up_message(self, text):
-        self.text = text
-    def sendEmail(self):
-        print(self.text)
-        message = MIMEMultipart()
-        text = MIMEText(self.text, 'plain', 'utf-8')
-        message['From'] = Header("UCLA Class Assistant", 'utf-8')
-        message['To'] =  Header("Luli", 'utf-8')
-        message['Subject'] = Header("Class Daily Report", 'utf-8')
-        message.attach(text)
-        exc = open("class_info.xlsx", "rb")
-        file1=MIMEBase('application','vnd.ms-excel')
-        file1.set_payload(exc.read())
-        exc.close()
-        Encoders.encode_base64(file1)
-        file1.add_header('Content-Disposition','attachment;filename=class_information.xlsx')
-        message.attach(file1)    
-        smtpObj = smtplib.SMTP('smtp.mailgun.org', 587)
-        smtpObj.login(self.mail_user,self.mail_pass)
-        print self.receivers
-        smtpObj.sendmail(self.sender, self.receivers, message.as_string())
-        smtpObj.quit()
-        print "success"
-
-def send_email_to(data):
-    l = list()
-    ostream="Good Morning, "
-    ostream+=data["name"]
-    ostream+='\n\nPlease find class status information below\n\n'
-    for ID in data["list"]:
-        new_class = Class(ID)
-        ostream+=new_class.get_ostream()
-        l.append(new_class.get_info())
-        ostream+='\n'
-    ostream+='''
-
-....
-
-Kepler:)'''
-    df = create_data_frame(l)
-    write_to_excel(df)
-    msg = Message(data["email"])
-    msg.set_up_message(ostream)
-    msg.sendEmail()
-
-import json
-if __name__ == '__main__':
-    with open('/home/ubuntu/data/luli_daily_report.json') as data_file:
-        data = json.load(data_file)
-        send_email_to(data)
-    with open('/home/ubuntu/data/xilai.json') as data_file:
-        data = json.load(data_file)
-        send_email_to(data)
-    with open('/home/ubuntu/data/brian.json') as data_file:
-        data = json.load(data_file)
-        send_email_to(data)
-                      
-    # with open('/home/ubuntu/data/text.json') as data_file:
-    #     data = json.load(data_file)
-    #     send_email_to(data)
-    
