@@ -10,7 +10,7 @@ class Class:
     def __init__(self, index):
         self.index = index
         self.info = get_detailed_class_info(self.index)
-        self.ostream = self.get_open_seats()
+        self.ostream = self.print_open_seats()
     def print_open_seats(self):
         ostream = self.info["subject"] + " " + self.info["course_number"] + " " + self.info["course_title"] + "\n"
         ostream += "The status is " + self.info["status"]
@@ -18,7 +18,7 @@ class Class:
         self.ostream = ostream
         return ostream
     def is_available(self):
-        return ("Closed" in self.info["status"])
+        return (not "Closed" in self.info["status"])
     def get_info(self):
         return self.info
     def get_ostream(self):
