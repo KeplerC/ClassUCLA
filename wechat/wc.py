@@ -119,6 +119,8 @@ def report_to_usr(usr, only_available = False):
             if(new_class.is_available()):
                 class_info = new_class.get_info()
                 ostream +="Your {} {} {} is available! Now its status is {}. To stop scanning for this class, please reply dgqkr{} \n".format(class_info["subject"], class_info["course_number"], class_info["course_title"], class_info["status"], c)
+            else:
+                log_to("{} is Full")
         else:    
             ostream += new_class.print_open_seats()
     return ostream
@@ -154,21 +156,27 @@ def polling(only_available = True):
             #usr_json.write(json.dumps(l))
             #usr_json.close()
 
+
 import time
-def main():
-    bot = Bot(console_qr=True)
-    my_friend = bot.friends()
-    while True:
-        for i in range(0, 45):
-            polling()
-            time.sleep(1800)
-        polling(only_available = False)
+import schedule 
+def log_to(ostream):
+    log_file = open("/home/ubuntu/data/log.txt", 'a')
+    log_file.write(time.asctime(time.localtime(time.time())))
+    log_file.write(ostream + "\n")
+    log_file.close()
+
     
-if __name__ == "__main__":
-    main()
-    
-@bot.register(my_friend, TEXT, except_self=False)
+bot = Bot(console_qr=True)
+my_friend = bot.friends()
+# schedule.every().day.at("12:00").do(polling, False)
+# schedule.every(30).minutes.do(polling)
+# while True:
+#     schedule.run_pending()
+
+#@bot.register(my_friend, TEXT)
+@bot.register(TEXT)
 def reply_my_friend(msg):
-    return process_text(msg)
+    print("Received {}\n".format(msg.text))
+    #return process_text(msg)
 
-
+embed()
