@@ -1,11 +1,12 @@
 #!/usr/bin/python
+#encoding:utf-8
+
 import re
 from wxpy import *
 from iclass import Class as c
 from iclass import *
 
-bot = None
-JSON_PATH='.'
+JSON_PATH='./debug/'
 DLMT = "dgqk"
 INSTR = '''
 Welcome. 
@@ -22,11 +23,6 @@ dgqk+
 欢迎提各种意见/帮忙找bug
 谢谢
 '''
-@bot.register(my_friend, TEXT, except_self=False)
-def reply_my_friend(msg):
-    return process_text(msg)
-    #return 'received: {} ({})'.format(msg.text, msg.type)
-
 import json
 import os
 '''
@@ -58,11 +54,11 @@ def process_text(msg):
         times: how many times that is scanner checks for you
             mostly placebo and debug use
         '''
-        data = {"name":usr, "class_list":list(),"daily_report": True, "times": 0]
+        data = {"name":usr, "class_list":list(),"daily_report": True, "times": 0}
         with open(JSON_PATH + "/index.json") as datafile:
             indices = json.load(datafile)
             indices["usrs"].append(usr)
-            #TODO: store json
+            datafile.write(indices.jump(indices))
 
     if(text[0] == 'a'):
         add_list = re.findall(r"\b\d{9}\b",text)
@@ -91,6 +87,10 @@ def process_text(msg):
         if(ostream == ""):
             ostream += "No class in the list. Please type dgqka + 9 digit class id to get started!"
     #TODO: store json file
+    write_to  = open(path, w)
+    write_to.write(json.jump(usr))
+    write_to.close()
+    
     if(ostream == ""):
         ostream = INSTR
     return ostream
@@ -102,8 +102,7 @@ def report_to_usr(usr, only_available = False):
         if(only_available):
             if(new_class.is_available()):
                 class_info = new_class.get_info()
-                ostream +="Your {} {} is available! Now its status is {}. To stop scanning for this class, please reply dgqkr{}"
-                    .format(class_info["subject"], class_info["course_number"], class_info["status"], class_info["number"])
+                ostream +="Your {} {} is available! Now its status is {}. To stop scanning for this class, please reply dgqkr{}".format(class_info["subject"], class_info["course_number"], class_info["status"], class_info["number"])
             pass #TODO: print class is available information
         else:    
             ostream += new_class.print_open_seats()
@@ -137,4 +136,9 @@ if __name__ == "__main__":
     my_friend = bot.friends()
     while(True):
         polling()
+
+@bot.register(my_friend, TEXT, except_self=False)
+def reply_my_friend(msg):
+    return process_text(msg)
+    #return 'received: {} ({})'.format(msg.text, msg.type)
 
