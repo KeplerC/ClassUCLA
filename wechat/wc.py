@@ -31,10 +31,8 @@ User Interface
 '''
 def process_text(msg):
     #not related
-    #text = msg.text.strip(' ').lower()
-    #usr = msg.receiver
-    text = msg
-    usr = "test"
+    text = msg.text.strip(' ').lower()
+    usr = msg.receiver
     if(text[:4] != DLMT):
         return None
 
@@ -56,7 +54,7 @@ def process_text(msg):
         times: how many times that is scanner checks for you
             mostly placebo and debug use
         '''
-        data = {"name":usr, "class_list":list(),"daily_report": True, "times": 0}
+        data = {"name":usr, "class_list":list(),"daily_report": False}
         index_path = JSON_PATH + "index.json"
         if(not os.path.exists(index_path)):            
             indices = dict()
@@ -135,9 +133,9 @@ def send_to_usr(usr, ostream):
             search_name = usr
         else:
             search_name = usr["name"]
-        #target = bot.friends().search(usr["name"])[0]
-        #target.send(ostream)
-        print(usr, ostream)
+        target = bot.friends().search(usr["name"])[0]
+        target.send(ostream)
+        #print(usr, ostream)
     except:
         print("Send Error!")
 
@@ -155,22 +153,22 @@ def polling(only_available = True):
             #l["times"] += len(l["class_list"])
             #usr_json.write(json.dumps(l))
             #usr_json.close()
-            
 
+import time
+def main():
+    bot = Bot(console_qr=True)
+    my_friend = bot.friends()
+    while True:
+        for i in range(0, 45):
+            polling()
+            time.sleep(1800)
+        polling(only_available = False)
+    
 if __name__ == "__main__":
-    print(process_text("dgqkl"))
-    print(process_text("dgqkr18778020"))
-    print(process_text("dgqkr18kkdsjfl"))
-    process_text("dgqka187576200")
-    polling()
-    polling(only_available = False)
-    #bot = Bot(console_qr=True)
-    #my_friend = bot.friends()
-    #while(True):
-    #    polling()
-
-#@bot.register(my_friend, TEXT, except_self=False)
+    main()
+    
+@bot.register(my_friend, TEXT, except_self=False)
 def reply_my_friend(msg):
     return process_text(msg)
-    #return 'received: {} ({})'.format(msg.text, msg.type)
+
 
