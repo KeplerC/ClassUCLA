@@ -6,7 +6,7 @@ from wxpy import *
 from iclass import Class as c
 import iclass
 
-JSON_PATH='./debug/'
+JSON_PATH='/home/ubuntu/ClassUCLA/wechat/debug/'
 DLMT = "dgqk"
 INSTR = '''
 Welcome. 
@@ -34,14 +34,17 @@ def process_text(msg):
     text = msg.text.strip(' ').lower()
     usr = msg.receiver
     if(text[:4] != DLMT):
-        return None
+        #return "Received {}\n".format(msg.text)
+        return ""
 
     text = text[4:]
     ostream = ""
 
     #load json file    
     path = JSON_PATH +usr+".json"
+    print(path)
     if(os.path.exists(path)):
+        print(path)
         with open(path) as datafile:
             data = json.load(datafile)
     else:
@@ -56,6 +59,7 @@ def process_text(msg):
         '''
         data = {"name":usr, "class_list":list(),"daily_report": False}
         index_path = JSON_PATH + "index.json"
+        print("Creating new profile for {}".format(usr))
         if(not os.path.exists(index_path)):            
             indices = dict()
             indices["usrs"] = list()
@@ -173,10 +177,9 @@ my_friend = bot.friends()
 # while True:
 #     schedule.run_pending()
 
-#@bot.register(my_friend, TEXT)
-@bot.register(TEXT)
+@bot.register(my_friend, TEXT)
 def reply_my_friend(msg):
-    print("Received {}\n".format(msg.text))
-    #return process_text(msg)
+    #print("Received {}\n".format(msg.text))
+    return process_text(msg)
 
 embed()
