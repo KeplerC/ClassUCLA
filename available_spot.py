@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/usr/bin/python
 
 import requests
 from bs4 import BeautifulSoup
@@ -134,14 +134,14 @@ Kepler :)'''
     else:
         print("Full")
         print(time.asctime(time.localtime(time.time())))
-        log_file = open("/home/ubuntu/ClassUCLA/app/log.txt", 'a')
+        log_file = open("./log.txt", 'a')
         log_file.write(time.asctime(time.localtime(time.time())))
         log_file.write("  FULL\n")
         log_file.close()
 
 import json
 if __name__ == '__main__':
-    with open ('/home/ubuntu/data/index.json') as data_file:
+    with open ('./index.json') as data_file:
         data = json.load(data_file)
         names = data['list']
         
