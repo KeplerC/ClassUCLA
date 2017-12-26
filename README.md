@@ -1,7 +1,16 @@
 # ClassUCLA
-This is a class check and enroll program for myUCLA. 
 
-in directory /app/
+## Files 
+* available_spot: check if the class has available spot
+* daily_report: report not matter if class is available
+* restriction\_is\_gone: check if certain restriction is gone 
+
+## Todo list
+* To be more organized 
+* wechat
+
+## iclass Library 
+This is a class information check library for myUCLA. 
 
 it has all the information that you need for watching a class. All one needs to do is to edit the json file.
 
@@ -37,6 +46,3 @@ Now it supports
 *  writingII requirement
 *  diversity requirement
 *  class notes
-
-To look for specific set of classes, just enter class id in scrapy.py by ./scrapy.py
-and to get all available detailed class website, just run ./get_available_webiste.py
