@@ -3,6 +3,7 @@ import time
 import os
 import datetime
 from available_spot import *
+from daily_report import * 
 import subprocess
 
 
