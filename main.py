@@ -1,8 +1,10 @@
-#!/usr/bin/python
+2#!/usr/bin/python
 import time
 import os
 import datetime
 from available_spot import *
+import subprocess
+
 
 def management():
     with open("./index.json","w") as datafile:
@@ -22,7 +24,7 @@ def process():
             data = json.load(data_file)
             send_email_to(data)
     time_stamp = "{} : {}\n".format(os.getpid(), str(datetime.datetime.now()))
-    with open("./log", "a") as log:
+    with open("./log.txt", "a") as log:
         log.write(time_stamp)
         log.close()
 
@@ -30,12 +32,14 @@ def main():
     counter = 0
     while True:
         process()
-        time.sleep(1)
+        time.sleep(3600)
         counter += 1
-        if(time == 4):
-            os.fork()
+        if(counter == 23):
+            child =subprocess.call(['./script.sh'])
+            print(child)
+            if(child == 0):
+                time.sleep(1)
 
 
 if __name__ == "__main__":
-    management()
-    process()
+    main()

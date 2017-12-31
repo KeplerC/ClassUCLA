@@ -146,7 +146,7 @@ if __name__ == '__main__':
         names = data['list']
         
     for name in names:
-        path = '/home/ubuntu/data/' + name + '.json'
+        path = './' + name + '.json'
         with open(path) as data_file:
             data = json.load(data_file)
             send_email_to(data)
