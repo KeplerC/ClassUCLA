@@ -86,7 +86,7 @@ mail_host="smtp.mailgun.org"
 mail_user="postmaster@sandbox771d908665d24655b9cd402f4ece3dc8.mailgun.org"   
 mail_pass="bfce1771c370570883fd229be0f3638a"
 
-TERM = '18W'
+TERM = '18S'
 #CLASS_ID = ["262447200", "262576200"]
 #RECEIVER="Kaiyuan Chen"
 #RECEIVER_ADDR='chenkaiyuan@ucla.edu'
