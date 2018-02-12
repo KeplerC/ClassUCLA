@@ -94,7 +94,7 @@ TERM = '18S'
 def sendEmail(content, address):
     message = MIMEText(content, 'plain', 'utf-8')
     message['From'] = Header("UCLA Class Assistant", 'utf-8')
-    message['To'] =  Header("Luli", 'utf-8')
+    message['To'] =  Header("Kepler", 'utf-8')
     message['Subject'] = Header("Class Update", 'utf-8')
     try:
         receivers = ["chenkaiyuan@ucla.edu"]
@@ -113,7 +113,7 @@ def sendEmail(content, address):
 import time
 def send_email_to(data):
     should_send = False
-    ostream='''Dear lu, 
+    ostream='''Dear, 
 Your Class is Available: 
 '''
     ostream+='\n'
