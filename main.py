@@ -4,6 +4,64 @@ import os
 import datetime
 from available_spot import *
 import subprocess
+from sms import *
+
+import time
+def send_email_to(data):
+    should_send = False
+    ostream='''Dear, 
+Your Class is Available: 
+'''
+    ostream+='\n'
+    for ID in data["list"]:
+        stream = getOpenSeats(ID)
+        if(stream == None or stream == ""):
+            continue
+        else:
+            should_send = True
+            ostream+= stream
+            ostream+='\n'
+    ostream+='''
+
+B.R.
+Kepler :)'''
+    if(should_send):
+        sendEmail(ostream, data["email"])
+    else:
+        print("Full")
+        print(time.asctime(time.localtime(time.time())))
+        log_file = open("./log.txt", 'a')
+        log_file.write(time.asctime(time.localtime(time.time())))
+        log_file.write("  FULL\n")
+        log_file.close()
+
+def send_sms_to(data):
+    should_send = False
+    ostream='''Dear, 
+Your Class is Available: 
+'''
+    ostream+='\n'
+    for ID in data["list"]:
+        stream = getOpenSeats(ID)
+        if(stream == None or stream == ""):
+            continue
+        else:
+            should_send = True
+            ostream+= stream
+            ostream+='\n'
+    ostream+='''
+
+B.R.
+Kepler :)'''
+    if(should_send):
+        send_sms(ostream)
+    else:
+        print("Full")
+        print(time.asctime(time.localtime(time.time())))
+        log_file = open("./log.txt", 'a')
+        log_file.write(time.asctime(time.localtime(time.time())))
+        log_file.write("  FULL\n")
+        log_file.close()
 
 
 def management():
@@ -22,7 +80,8 @@ def process():
         path = './' + name + '.json'
         with open(path) as data_file:
             data = json.load(data_file)
-            send_email_to(data)
+            #send_email_to(data)
+            send_sms_to(data)
     time_stamp = "{} : {}\n".format(os.getpid(), str(datetime.datetime.now()))
     with open("./log.txt", "a") as log:
         log.write(time_stamp)

@@ -111,34 +111,6 @@ def sendEmail(content, address):
         print "failed"
 
 import time
-def send_email_to(data):
-    should_send = False
-    ostream='''Dear, 
-Your Class is Available: 
-'''
-    ostream+='\n'
-    for ID in data["list"]:
-        stream = getOpenSeats(ID)
-        if(stream == None or stream == ""):
-            continue
-        else:
-            should_send = True
-            ostream+= stream
-            ostream+='\n'
-    ostream+='''
-
-B.R.
-Kepler :)'''
-    if(should_send):
-        sendEmail(ostream, data["email"])
-    else:
-        print("Full")
-        print(time.asctime(time.localtime(time.time())))
-        log_file = open("./log.txt", 'a')
-        log_file.write(time.asctime(time.localtime(time.time())))
-        log_file.write("  FULL\n")
-        log_file.close()
-
 import json
 if __name__ == '__main__':
     with open ('./index.json') as data_file:
