@@ -2,7 +2,7 @@
 
 TERM = '18W'
 from iclass import *
-
+from twilio.rest import Client
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
@@ -11,9 +11,11 @@ from email.MIMEBase import MIMEBase
 from email import Encoders
 
 class Message:
-    def __init__(self, address):        
+    def __init__(self, address, email = True):        
         self.mail_host="smtp.mailgun.org"
-        self.mail_user="postmaster@sandbox771d908665d24655b9cd402f4ece3dc8.mailgun.org"   
+        self.mail_user="postmaster@sandbox771d908665d24655b9cd402f4ece3dc8.mailgun.org"
+        self.account = "ACd1a95e95cf7c1a0e19382908a58708d7"
+        self.token = "e12cdd81b0803239c8cfa02648d60676"
         self.mail_pass="bfce1771c370570883fd229be0f3638a"
         self.text = ""
         self.receivers = ["chenkaiyuan@ucla.edu"]
@@ -23,6 +25,13 @@ class Message:
         self.receivers.append(address)
     def set_up_message(self, text):
         self.text = text
+    def send_sms(self, text):
+        if(email == True):
+            return
+        if(text == ""):
+            return
+        client = Client(self.account, self.token)
+        message = client.messages.create(to=self.address, from_="+13235537537", body=text)
     def sendEmail(self):
         print(self.text)
         message = MIMEMultipart()
@@ -56,9 +65,6 @@ def send_email_to(data):
         l.append(new_class.get_info())
         ostream+='\n'
     ostream+='''
-
-....
-
 Kepler:)'''
     df = create_data_frame(l)
     write_to_excel(df)

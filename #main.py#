@@ -41,13 +41,6 @@ def send_to(data, mean = "sms"):
         log_file.write(time.asctime(time.localtime(time.time())))
         log_file.write("  FULL\n")
         log_file.close()
-
-
-def management():
-    with open("data/index.json","w") as datafile:
-        data = dict()
-        data["list"] = ["kepler"]
-        datafile.write(json.dumps(data))
     
 
 def process():
