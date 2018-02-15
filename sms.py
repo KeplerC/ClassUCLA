@@ -1,11 +1,13 @@
 from twilio.rest import Client
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-account = "ACd1a95e95cf7c1a0e19382908a58708d7"
-token = "e12cdd81b0803239c8cfa02648d60676"
+import config
 
 def send_sms(content, phone):
     if(content == ""):
         return False
-    client = Client(account, token)
-    message = client.messages.create(to=phone, from_="+13235537537", body=content)
+    
+    client = Client(config.account, config.token)
+    message = client.messages.create(to=phone, from_ = config.phone, body=content)
     return True

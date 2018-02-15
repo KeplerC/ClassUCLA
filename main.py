@@ -5,26 +5,26 @@ import datetime
 from available_spot import *
 import subprocess
 from sms import *
-
+from management import *
 import time
 def get_ostream(data, empty_send = False):
     should_send = False
-    ostream='''Dear, 
-Your Class is Available: 
-'''
-    ostream+='\n'
+    ostream='Hey, your class is ready\n'
     for ID in data["list"]:
         stream = getOpenSeats(ID)
         if(stream == None or stream == ""):
             continue
         else:
             should_send = True
+            class_remove(data["name"], ID)
+            k = stream.split("\n")
+            stream = k[0] + "\n" + k[1] + "\n"
+            for i in k[2:]:
+                if(i.find("Open") != -1):
+                   stream += i
+                   stream += "\n"
             ostream+= stream
-            ostream+='\n'
-    ostream+='''
-
-B.R.
-Kepler :)'''
+    ostream+='''Kepler :)'''
     return ostream, should_send
     
 def send_to(data, mean = "sms"):
@@ -33,6 +33,7 @@ def send_to(data, mean = "sms"):
         if(mean == "email"):
             sendEmail(ostream, data["email"])
         if(mean == "sms"):
+            print(ostream)
             send_sms(ostream, data["phone"])
     else:
         print("Full")
@@ -40,23 +41,15 @@ def send_to(data, mean = "sms"):
         log_file = open("./log.txt", 'a')
         log_file.write(time.asctime(time.localtime(time.time())))
         log_file.write("  FULL\n")
-        log_file.close()
-
-
-def management():
-    with open("data/index.json","w") as datafile:
-        data = dict()
-        data["list"] = ["kepler"]
-        datafile.write(json.dumps(data))
-    
+        log_file.close()    
 
 def process():
-    with open ('data/index.json') as data_file:
+    with open ('../data/index.json') as data_file:
         data = json.load(data_file)
         names = data['list']
         
     for name in names:
-        path = 'data/' + name + '.json'
+        path = '../data/' + name + '.json'
         with open(path) as data_file:
             data = json.load(data_file)
             send_to(data)

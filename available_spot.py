@@ -46,7 +46,7 @@ def getOpenSeats(index):
                 if(msg1 == "Closed"):
                     return None
                 msg2 = msg2.replace("<br/>", " with ");
-                ostream+=". Its status is "+msg2+"\n"
+                ostream+=": "+msg2+"\n"
             flag = -1
         if string.find("Lec") != -1:
             #print(string)
