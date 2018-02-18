@@ -30,31 +30,29 @@ def get_ostream(data, empty_send = False):
 def send_to(data, mean = "sms"):
     ostream, should_send = get_ostream(data)
     if(should_send):
-        if(mean == "email"):
-            sendEmail(ostream, data["email"])
-        if(mean == "sms"):
-            print(ostream)
-            send_sms(ostream, data["phone"])
+        sendEmail(ostream, data["email"])
+        send_sms(ostream, data["phone"])
     else:
         print("Full")
         print(time.asctime(time.localtime(time.time())))
         log_file = open("./log.txt", 'a')
         log_file.write(time.asctime(time.localtime(time.time())))
         log_file.write("  FULL\n")
+        log_file.write(str(data["list"]))
         log_file.close()    
 
 def process():
-    with open ('../data/index.json') as data_file:
+    with open ('/u/cs/ugrad/kaiyuanc/scratch/data/index.json') as data_file:
         data = json.load(data_file)
         names = data['list']
         
     for name in names:
-        path = '../data/' + name + '.json'
+        path = '/u/cs/ugrad/kaiyuanc/scratch/data/' + name + '.json'
         with open(path) as data_file:
             data = json.load(data_file)
             send_to(data)
     time_stamp = "{} : {}\n".format(os.getpid(), str(datetime.datetime.now()))
-    with open("./log.txt", "a") as log:
+    with open("/u/cs/ugrad/kaiyuanc/scratch/ClassUCLA/log.txt", "a") as log:
         log.write(time_stamp)
         log.close()
 
@@ -64,7 +62,7 @@ def main():
         process()
         time.sleep(3600)
         counter += 1
-        if(counter == 23):
+        if(counter == 10):
             child =subprocess.call(['./script.sh'])
             print(child)
             if(child == 0):
