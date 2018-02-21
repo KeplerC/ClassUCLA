@@ -8,6 +8,8 @@ from email.mime.text import MIMEText
 from email.header import Header
 
 def getOpenSeats(index):
+    if(index == ""):
+        return None
     URL = 'https://sa.ucla.edu/ro/public/soc/Results?t='+TERM+'&sBy=classidnumber&id='+index+'&undefined=Go&btnIsInIndex=btn_inIndex'
     try:
         r = requests.get(URL)

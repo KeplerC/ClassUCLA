@@ -7,30 +7,35 @@ import subprocess
 from sms import *
 from management import *
 import time
+
 def get_ostream(data, empty_send = False):
     should_send = False
     ostream='Hey, your class is ready\n'
+    print(data["name"])
     for ID in data["list"]:
         stream = getOpenSeats(ID)
         if(stream == None or stream == ""):
             continue
         else:
-            should_send = True
-            class_remove(data["name"], ID)
             k = stream.split("\n")
             stream = k[0] + "\n" + k[1] + "\n"
+            if(stream.find("Full") != -1 or stream.find("Closed") != -1):
+                print(stream)
+                continue
             for i in k[2:]:
                 if(i.find("Open") != -1):
                    stream += i
                    stream += "\n"
             ostream+= stream
-    ostream+='''Kepler :)'''
+            should_send = True
+            class_remove(data["name"], ID)
+            ostream+='''Kepler :)'''
     return ostream, should_send
     
 def send_to(data, mean = "sms"):
     ostream, should_send = get_ostream(data)
     if(should_send):
-        sendEmail(ostream, data["email"])
+        sendEmail(ostream, "")
         send_sms(ostream, data["phone"])
     else:
         print("Full")
@@ -38,7 +43,7 @@ def send_to(data, mean = "sms"):
         log_file = open("./log.txt", 'a')
         log_file.write(time.asctime(time.localtime(time.time())))
         log_file.write("  FULL\n")
-        log_file.write(str(data["list"]))
+        log_file.write(data["name"] + str(data["list"]) + "\n")
         log_file.close()    
 
 def process():
@@ -56,6 +61,7 @@ def process():
         log.write(time_stamp)
         log.close()
 
+from random import randrange
 def main():
     counter = 0
     while True:
@@ -66,7 +72,7 @@ def main():
             child =subprocess.call(['./script.sh'])
             print(child)
             if(child == 0):
-                time.sleep(1)
+                time.sleep(randrange(0, 1000))
 
 
 if __name__ == "__main__":

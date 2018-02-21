@@ -39,12 +39,13 @@ if __name__ == "__main__":
         data = csv.reader(csvfile)
         counter = 0
         for s in data:
-            print(s)
             if(s[2] == "Preferred Name"):
                 continue
             person = s[2]
             this_person_exists(person)
             classid = s[3]
+            if(len(classid) < 9):
+                classid = "00" + classid
             phone = s[4]
             email = s[1]
             ret = getOpenSeats(classid)
@@ -62,4 +63,5 @@ if __name__ == "__main__":
                 profile.seek(0)
                 profile.truncate()
                 profile.write(json.dumps(prof))
-                
+                counter += 1
+        print("total added: " + str(counter))

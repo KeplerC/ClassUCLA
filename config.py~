@@ -1,4 +1,0 @@
-class config():
-    def __init__():
-        self.account = "ACd1a95e95cf7c1a0e19382908a58708d7"
-        self.token = "e12cdd81b0803239c8cfa02648d60676"
