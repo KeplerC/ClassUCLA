@@ -26,6 +26,8 @@ def getOpenSeats(index):
     flag = -1
     printed = False #a flag for printing class names
     ostream = ""
+    #print(text)
+    have_seats = False
     for i in range(len(text)):
         string = str(text[i])
         #print(string)
@@ -45,8 +47,9 @@ def getOpenSeats(index):
                 msg1 = string[loc1: loc2]
                 msg2 = string[loc2+5: loc3]
                 ostream+=" is " + msg1
-                if(msg1 == "Closed"):
-                    return None
+                #print(msg1)
+                if(msg1.find("Closed") == -1):
+                    have_seats = True
                 msg2 = msg2.replace("<br/>", " with ");
                 ostream+=": "+msg2+"\n"
             flag = -1
@@ -82,6 +85,8 @@ def getOpenSeats(index):
             msg = string[loc2 : loc1]
             
             ostream += string [loc2 : loc1]
+    if(have_seats == False):
+        return None
     return ostream 
 
 mail_host="smtp.mailgun.org"

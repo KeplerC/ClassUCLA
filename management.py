@@ -1,8 +1,10 @@
 #!/usr/bin/python
 import json
 from available_spot import *
+PATH = "/home/ubuntu/"
+
 def this_person_exists(person):
-    with open("../data/index.json","r+") as datafile:
+    with open(PATH + "data/index.json","r+") as datafile:
         data = json.load(datafile)
         names = data["list"] 
         if(person in names):
@@ -11,7 +13,7 @@ def this_person_exists(person):
         datafile.truncate()
         data["list"].append(person)
         datafile.write(json.dumps(data))
-        f = open("../data/" + person + ".json","w+")
+        f = open(PATH + "data/" + person + ".json","w+")
         d = dict()
         d["name"] = person
         d["email"] = ""
@@ -22,10 +24,14 @@ def this_person_exists(person):
         return False
 
 def class_remove(person, class_id):
-    with open("../data/"+person+".json","r+") as datafile:
+    with open(PATH + "data/"+person+".json","r+") as datafile:
         data = json.load(datafile)
         names = data["list"]
         names.remove(class_id)
+        if "completed" in data:
+            data["completed"].append(class_id)
+        else:
+            data["completed"] = [class_id]
         datafile.seek(0)
         datafile.truncate()
         datafile.write(json.dumps(data))
@@ -47,15 +53,14 @@ if __name__ == "__main__":
             if(len(classid) < 9):
                 classid = "00" + classid
             phone = s[4]
-            email = s[1]
-            ret = getOpenSeats(classid)
-            if(ret == ""):
-                print(person + " wrong class id " + classid)
-                continue
-            
+            email = s[1]            
             with open("../data/"+person+".json", "r+") as profile:
                 prof = json.load(profile)
                 if(classid in prof["list"]):
+                    continue
+                ret = getOpenSeats(classid)
+                if(ret == ""):
+                    print(person + " wrong class id " + classid)
                     continue
                 prof["list"].append(classid)
                 prof["phone"] = "+1" + phone
