@@ -1,6 +1,6 @@
 #! /usr/bin/python
 
-TERM = '18W'
+TERM = '18S'
 
 import requests
 from bs4 import BeautifulSoup
