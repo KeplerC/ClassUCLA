@@ -51,7 +51,10 @@ def getOpenSeats(index):
                 if(msg1.find("Closed") == -1):
                     have_seats = True
                 msg2 = msg2.replace("<br/>", " with ");
-                ostream+=": "+msg2+"\n"
+                if(msg1.find("Open") != -1):
+                    ostream+=": "+msg2+"\n"
+                else:
+                    ostream+= ": "+str(text[i+1])[3:-4] + "\n"
             flag = -1
         if string.find("Lec") != -1:
             #print(string)

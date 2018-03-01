@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import time
 import os
 import datetime
@@ -10,7 +11,7 @@ import time
 PATH = "/home/ubuntu/"
 def get_ostream(data, empty_send = False):
     should_send = False
-    ostream='Hey, your class is ready\n'
+    ostream='Your class\'s ready\n'
     print(data["name"])
     for ID in data["list"]:
         print(ID)
@@ -24,13 +25,13 @@ def get_ostream(data, empty_send = False):
             if(stream.find("Open") == -1 and stream.find("Waitlist") == -1):
                 continue
             for i in k[2:]:
-                if(i.find("Open") != -1):
+                if(i.find("Open") != -1 or i.find("Waitlist: ") != -1):
                    stream += i
                    stream += "\n"
             ostream+= stream
             should_send = True
             class_remove(data["name"], ID)
-    ostream+='''Kepler :)'''
+    ostream+='''If full again, wx me.\nKepler'''
     return ostream, should_send
     
 def send_to(data, mean = "sms"):
@@ -38,6 +39,7 @@ def send_to(data, mean = "sms"):
     if(should_send):
         sendEmail(ostream, "")
         send_sms(ostream, data["phone"])
+        print(ostream)
         log_file = open(PATH + "ClassUCLA/log.txt", 'a')
         log_file.write(time.asctime(time.localtime(time.time())))
         log_file.write(ostream)
