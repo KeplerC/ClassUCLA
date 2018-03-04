@@ -36,12 +36,8 @@ def class_remove(person, class_id):
         datafile.truncate()
         datafile.write(json.dumps(data))
 
-import sys
-import csv
-if __name__ == "__main__":
-    # person = raw_input('Name: ')
-
-    with open("../data/ClassUCLA RSVP (Responses) - Form Responses 1.csv",'rb') as csvfile:
+def import_from_csv(path):
+    with open(path,'rb') as csvfile:
         data = csv.reader(csvfile)
         counter = 0
         for s in data:
@@ -54,7 +50,7 @@ if __name__ == "__main__":
                 classid = "00" + classid
             phone = s[4]
             email = s[1]            
-            with open("../data/"+person+".json", "r+") as profile:
+            with open(PATH + "data/"+person+".json", "r+") as profile:
                 prof = json.load(profile)
                 if(classid in prof["list"]):
                     continue
@@ -69,4 +65,12 @@ if __name__ == "__main__":
                 profile.truncate()
                 profile.write(json.dumps(prof))
                 counter += 1
-        print("total added: " + str(counter))
+                print("added " + person)
+    print("total added: " + str(counter))
+    return counter
+
+import sys
+import csv
+if __name__ == "__main__":
+    # person = raw_input('Name: ')
+    import_from_csv("../data/ClassUCLA RSVP (Responses) - Form Responses 1.csv")

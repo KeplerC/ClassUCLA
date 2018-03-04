@@ -19,10 +19,11 @@ def get_ostream(data, empty_send = False):
         if(stream == None or stream == ""):
             continue
         else:
-            print(stream)
             k = stream.split("\n")
             stream = k[0] + "\n" + k[1] + "\n"
             if(stream.find("Open") == -1 and stream.find("Waitlist") == -1):
+                continue
+            if(stream.find("Closed: No Waitlist") != -1):
                 continue
             for i in k[2:]:
                 if(i.find("Open") != -1 or i.find("Waitlist: ") != -1):
@@ -37,8 +38,9 @@ def get_ostream(data, empty_send = False):
 def send_to(data, mean = "sms"):
     ostream, should_send = get_ostream(data)
     if(should_send):
-        sendEmail(ostream, "")
         send_sms(ostream, data["phone"])
+        ostream += data["name"]
+        sendEmail(ostream, "")
         print(ostream)
         log_file = open(PATH + "ClassUCLA/log.txt", 'a')
         log_file.write(time.asctime(time.localtime(time.time())))

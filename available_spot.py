@@ -74,7 +74,8 @@ def getOpenSeats(index):
             except:
                 print("cannot parse the website")
             
-            ostream += string[loc1 : loc2]
+            s = string[loc1 : loc2].split("&")[0]
+            ostream += s
             ostream += " "
             if string[loc3] == '0':
                 loc3 += 1
