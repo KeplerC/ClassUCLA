@@ -21,6 +21,6 @@ with open(PATH + "data/downloaded.csv", "r+") as datafile:
     datafile.truncate()
     datafile.write(sheet.export(format='csv'))
 
-ret = import_from_csv(PATH + "data/downloaded.csv")
+ret,s = import_from_csv(PATH + "data/downloaded.csv")
 if(ret != 0):
-    sendEmail(str(ret), "")
+    sendEmail(str(ret) +"\n"+ s, "")
