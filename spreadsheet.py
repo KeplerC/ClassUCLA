@@ -15,11 +15,17 @@ sheet = client.open("ClassUCLA RSVP (Responses)").sheet1
 
 # Extract and print all of the values
 list_of_hashes = sheet.get_all_records()
+print(len(list_of_hashes))
 #print(list_of_hashes)
 with open(PATH + "data/downloaded.csv", "r+") as datafile:
     datafile.seek(0)
     datafile.truncate()
     datafile.write(sheet.export(format='csv'))
+
+cell_list = sheet.range("A2:G"+str(len(list_of_hashes)+1))
+for cell in cell_list:
+    cell.value = ""
+sheet.update_cells(cell_list)
 
 ret,s = import_from_csv(PATH + "data/downloaded.csv")
 if(ret != 0):

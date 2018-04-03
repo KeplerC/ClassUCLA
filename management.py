@@ -46,26 +46,29 @@ def import_from_csv(path):
                 continue
             person = s[2]
             this_person_exists(person)
-            classid = s[3]
+            classid1 = s[3]
+            classid2 = s[5]
+            classid3 = s[6]
             phone = s[4]
             email = s[1]            
             with open(PATH + "data/"+person+".json", "r+") as profile:
                 prof = json.load(profile)
-                if(classid in prof["list"]):
-                    continue
-                ret = getOpenSeats(classid)
-                if(ret == ""):
-                    print(person + " wrong class id " + classid)
-                    continue
-                prof["list"].append(classid)
-                prof["phone"] = "+1" + phone
-                prof["email"] = email
-                profile.seek(0)
-                profile.truncate()
-                profile.write(json.dumps(prof))
-                counter += 1
-                print("added " + person)
-                ostream += person + " " + classid
+                for classid in [classid1, classid2, classid3]:
+                    if(classid in prof["list"]):
+                        continue
+                    ret = getOpenSeats(classid)
+                    if(ret == ""):
+                        print(person + " wrong class id " + classid)
+                        continue
+                    prof["list"].append(classid)
+                    prof["phone"] = "+1" + phone
+                    prof["email"] = email
+                    profile.seek(0)
+                    profile.truncate()
+                    profile.write(json.dumps(prof))
+                    counter += 1
+                    print("added " + person)
+                ostream += person + " " + classid+ "\n"
     print("total added: " + str(counter))
     return counter, ostream
 
