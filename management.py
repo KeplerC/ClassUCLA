@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import json
 from available_spot import *
-PATH = "/home/ubuntu/"
+PATH = "/root/"
 
 def this_person_exists(person):
     with open(PATH + "data/index.json","r+") as datafile:
@@ -76,4 +76,5 @@ import sys
 import csv
 if __name__ == "__main__":
     # person = raw_input('Name: ')
-    import_from_csv("../data/ClassUCLA RSVP (Responses) - Form Responses 1.csv")
+    ret,s = import_from_csv(PATH + "data/downloaded.csv")
+    #import_from_csv("../data/ClassUCLA RSVP (Responses) - Form Responses 1.csv")

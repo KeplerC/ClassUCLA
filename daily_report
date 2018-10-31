@@ -1,6 +1,6 @@
 #! /usr/bin/python
 
-TERM = '18W'
+TERM = '18F'
 from iclass import *
 from twilio.rest import Client
 import smtplib

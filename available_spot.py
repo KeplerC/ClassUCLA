@@ -96,8 +96,11 @@ def getOpenSeats(index):
 mail_host="smtp.mailgun.org"
 mail_user="postmaster@sandbox771d908665d24655b9cd402f4ece3dc8.mailgun.org"   
 mail_pass="bfce1771c370570883fd229be0f3638a"
+#mail_host = "email-smtp.us-east-1.amazonaws.com"
+#mail_user = "AKIAIJWZXSBNAMJHV2VA"
+#mail_pass = "AuYUdbO0gBEwtShshVSa3XM3OkrAZfx5qdF4uarUq/m7"
 
-TERM = '18S'
+TERM = '19W'
 #CLASS_ID = ["262447200", "262576200"]
 #RECEIVER="Kaiyuan Chen"
 #RECEIVER_ADDR='chenkaiyuan@ucla.edu'
@@ -107,29 +110,31 @@ def sendEmail(content, address):
     message['From'] = Header("UCLA Class Assistant", 'utf-8')
     message['To'] =  Header("Kepler", 'utf-8')
     message['Subject'] = Header("Class Update", 'utf-8')
-    try:
-        receivers = ["chenkaiyuan@ucla.edu"]
-        sender = "chenkaiyuan@ucla.edu"
-        receivers.append(address)
-        smtpObj = smtplib.SMTP('smtp.mailgun.org', 587)
-        smtpObj.login(mail_user,mail_pass)
-        print receivers
-        print address
-        smtpObj.sendmail(sender, receivers, message.as_string())
-        smtpObj.quit()
-        print "success"
-    except:
-        print "failed"
+
+    receivers = ["chenkaiyuan@ucla.edu"]
+    sender = "chenkaiyuan@ucla.edu"
+    receivers.append(address)
+    smtpObj = smtplib.SMTP(mail_host, 587)
+    smtpObj.ehlo()
+    smtpObj.starttls()
+    smtpObj.ehlo()
+    smtpObj.login(mail_user,mail_pass)
+    print receivers
+    print address
+    smtpObj.sendmail(sender, receivers, message.as_string())
+    smtpObj.quit()
+    print "success"
 
 import time
 import json
 if __name__ == '__main__':
-    with open ('./index.json') as data_file:
-        data = json.load(data_file)
-        names = data['list']
+    sendEmail("what", "")
+    # with open ('./index.json') as data_file:
+    #     data = json.load(data_file)
+    #     names = data['list']
         
-    for name in names:
-        path = './' + name + '.json'
-        with open(path) as data_file:
-            data = json.load(data_file)
-            send_email_to(data)
+    # for name in names:
+    #     path = './' + name + '.json'
+    #     with open(path) as data_file:
+    #         data = json.load(data_file)
+    #         send_email_to(data)

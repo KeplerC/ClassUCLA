@@ -8,7 +8,7 @@ from sms import *
 from management import *
 import time
 
-PATH = "/home/ubuntu/"
+PATH = "/root/"
 def get_ostream(data, empty_send = False):
     should_send = False
     ostream='Your class\'s ready\n'
