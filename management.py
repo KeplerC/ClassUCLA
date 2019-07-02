@@ -37,20 +37,23 @@ def class_remove(person, class_id):
         datafile.write(json.dumps(data))
 
 def import_from_csv(path):
-    ostream = ""
+
     with open(path,'rb') as csvfile:
         data = csv.reader(csvfile)
         counter = 0
         for s in data:
+            ostream = ""
             if(s[2] == "Preferred Name"):
                 continue
             person = s[2]
-            this_person_exists(person)
             classid1 = s[3]
             classid2 = s[5]
             classid3 = s[6]
             phone = s[4]
             email = s[1]            
+            if(person ==""):
+                continue
+            this_person_exists(person)
             with open(PATH + "data/"+person+".json", "r+") as profile:
                 prof = json.load(profile)
                 for classid in [classid1, classid2, classid3]:
@@ -68,7 +71,9 @@ def import_from_csv(path):
                     profile.write(json.dumps(prof))
                     counter += 1
                     print("added " + person)
-                ostream += person + " " + classid+ "\n"
+                    ostream += person + " " + classid+ "\n"
+                print("Hi " + person + ",\n" + ostream + "kpl")
+                sendEmail(ostream, email)
     print("total added: " + str(counter))
     return counter, ostream
 

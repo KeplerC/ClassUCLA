@@ -19,7 +19,6 @@ def send_sms(content, phone):
     return True
 
 
-
 mail_host=config.mail_host
 mail_user=config.mail_user
 mail_pass=config.mail_pass

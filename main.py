@@ -32,15 +32,25 @@ def get_ostream(data, empty_send = False):
             ostream+= stream
             should_send = True
             class_remove(data["name"], ID)
-    ostream+='''If full again, wx me.\nKepler'''
+    ostream+='''If full again, refill the form.\nKepler'''
     return ostream, should_send
     
 def send_to(data, mean = "sms"):
     ostream, should_send = get_ostream(data)
+    with open (PATH + 'data/sms.json') as data_file:
+        d = json.load(data_file)
+        names = d['list']
+
     if(should_send):
-        send_sms(ostream, data["phone"])
+       
+        try:
+            if data["name"] in names:
+                send_sms(ostream, data["phone"])
+        except:
+            print("send failed")
+       
         ostream += data["name"]
-        sendEmail(ostream, "")
+        sendEmail(ostream, data["email"])
         print(ostream)
         log_file = open(PATH + "ClassUCLA/log.txt", 'a')
         log_file.write(time.asctime(time.localtime(time.time())))
@@ -65,7 +75,10 @@ def process():
         path = PATH + 'data/' + name + '.json'
         with open(path) as data_file:
             data = json.load(data_file)
-            send_to(data)
+            try:
+                send_to(data)
+            except:
+                print("failed")
     time_stamp = "{} : {}\n".format(os.getpid(), str(datetime.datetime.now()))
     with open(PATH + "ClassUCLA/log.txt", "a") as log:
         log.write(time_stamp)
